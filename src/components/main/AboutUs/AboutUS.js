@@ -5,7 +5,6 @@ import '../../../style/main/AboutUs.scss'
 const AboutUS = () => {
     return (
         <div>
-
         </div>
     );
 };
