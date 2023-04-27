@@ -4,6 +4,7 @@ import '../../../style/main/AboutUs.scss'
 
 const AboutUS = () => {
     return (
+<<<<<<< HEAD:src/components/main/AboutUs/AboutUS.js
         <section id="about">
             <div className="container">
                 <div className="about">
@@ -24,6 +25,11 @@ const AboutUS = () => {
             </div>
 
         </section>
+=======
+        <div>
+
+        </div>
+>>>>>>> main:src/components/main-page/AboutUs/AboutUS.js
     );
 };
 

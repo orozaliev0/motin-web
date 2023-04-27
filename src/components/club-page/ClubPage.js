@@ -1,8 +1,8 @@
 import React from 'react';
-import Hero from "../Club/Hero/Hero";
-import Club from "../Club/Club/Club";
-import Project from "../Club/Project/Project";
-import Last from "../Club/Last/Last";
+import Hero from "./Hero/Hero";
+import Club from "./Club/Club";
+import Project from "./Project/Project";
+import Last from "./Last/Last";
 
 const ClubPage = () => {
     return (
