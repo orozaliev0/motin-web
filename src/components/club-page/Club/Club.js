@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../style/club/Club.scss'
+import '../../../style/it-club/Club.scss'
 const Club = () => {
     return (
         <div>
