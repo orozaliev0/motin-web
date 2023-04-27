@@ -1,12 +1,12 @@
 import React from 'react';
-import Hero from "../main/Hero/Hero";
-import AboutUS from "../main/AboutUs/AboutUS";
-import Courses from "../main/Courses/Courses";
-import Motion from "../main/Motion/Motion";
-import Project from "../main/Project";
-import Slick from "../main/Slick";
-import Last from "../main/Last/Last";
-import FAQ from "../main/FAQ/FAQ";
+import Hero from "./Hero/Hero";
+import AboutUS from "./AboutUs/AboutUS";
+import Courses from "./Courses/Courses";
+import Motion from "./Motion/Motion";
+import Project from "./Project";
+import Slick from "./Slick";
+import Last from "./Last/Last";
+import FAQ from "./FAQ/FAQ";
 
 const MainPage = () => {
 

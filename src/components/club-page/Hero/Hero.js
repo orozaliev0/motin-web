@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../style/club/Hero.scss'
+import '../../../style/it-club/Hero.scss'
 const Hero = () => {
     return (
         <div>
