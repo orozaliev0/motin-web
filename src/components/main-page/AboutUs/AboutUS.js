@@ -18,21 +18,34 @@ const AboutUS = () => {
                             <h2 className="about--title3">Подробнее</h2>
                         </div>
                     </div>
+                    <div className="about--box">
+                        <div className="about--numbers">
+                            <div>
+                                <h1 className="about--number1">2000+</h1>
+                                <p className="about--description">Выпусников</p>
+                            </div>
+                            <div>
+                                <h1 className="about--number1">2</h1>
+                                <p className="about--description">Года</p>
+                            </div>
+                            <div>
+                                <h1 className="about--number1">10+</h1>
+                                <p className="about--description">Менторов</p>
+                            </div>
+                            <div>
+                                <h1 className="about--number1">95%</h1>
+                                <p className="about--description">Трудоустроились</p>
+                            </div>
+                        </div>
 
-
-                </div>
-            </div>
-
-        </section>  
-
+                    </div>
 
                 </div>
             </div>
 
         </section>
-        <div>
 
-        </div>
+
     );
 };
 
