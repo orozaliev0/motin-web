@@ -1,0 +1,96 @@
+#motion {
+  padding: 120px 0;
+  background: #EFEFEF;
+
+  .motion {
+    display: flex;
+
+    &--box {
+      width: 383px;
+      height: 186px;
+      background: linear-gradient(130deg, #000000 35.42%, rgba(31, 31, 31, 0.9) 100%);
+      border-radius: 30px;
+      margin-top: 9.5rem;
+    }
+
+    &--btn1 {
+      width: 152px;
+      height: 50px;
+      background: #4886FF;
+      border-radius: 30px;
+      transform: rotate(-16.64deg);
+      color: #FFFFFF;
+      position: relative;
+      left: 11.5rem;
+      top: 4.5rem;
+    }
+
+    &--image {
+      position: relative;
+      top: -13rem;
+      left: 2rem;
+    }
+
+    &--block {
+      width: 800px;
+      height: 339px;
+      background: #FF563F;
+      border-radius: 30px;
+      margin-left: 7rem;
+      padding: 50px 35px;
+
+    }
+    &--titles{
+      display: flex;
+
+    }
+    &--title1 {
+      font-family: 'Muller',sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 36px;
+      color: #FFFFFF;
+      padding-bottom: 15px;
+    }
+    &--desc1{
+      font-family: 'SF Pro Display',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 140%;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    &--title2{
+      font-family: 'SF Pro Display',sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 120%;
+      color: #FFFFFF;
+      padding-bottom: 20px;
+    }
+    &--btn2{
+      font-family: 'SF Pro Display',sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: #FF0000;
+      width: 334px;
+      height: 50px;
+      background: #F8F8F8;
+      border-radius: 44px;
+    }
+    &--desc2{
+      font-family: 'SF Pro Display',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    &--left{
+      margin-left: 20px;
+    }
+  }
+}
