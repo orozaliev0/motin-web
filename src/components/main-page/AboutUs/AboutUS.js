@@ -4,7 +4,6 @@ import '../../../style/main/AboutUs.scss'
 
 const AboutUS = () => {
     return (
-        <div></div>
         <section id="about">
             <div className="container">
                 <div className="about">
@@ -18,7 +17,7 @@ const AboutUS = () => {
                                 лучшие практики офлайн — и онлайн-образования и таким образом <br/> достичь высоких результатов.</h2>
                             <h2 className="about--title3">Подробнее</h2>
                         </div>
-                    </div>
+                      </div>
                     <div className="about--box">
                         <div className="about--numbers">
                             <div>
