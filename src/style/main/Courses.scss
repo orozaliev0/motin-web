@@ -1,0 +1,212 @@
+#course {
+  background: #EFEFEF;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  .course {
+    &--anim {
+      width: 100%;
+      height: 73px;
+      background: #EC3025;
+      position: relative;
+      overflow: hidden;
+      padding: 15px;
+    }
+
+    &--name {
+      display: flex;
+      align-items: center;
+    }
+
+    &--title {
+      font-family: 'Muller', sans-serif;
+      font-style: normal;
+      font-weight: 980;
+      font-size: 32px;
+      line-height: 32px;
+      color: #FFFFFF;
+      padding: 0 20px;
+    }
+
+    &--title2 {
+      padding: 0 20px;
+    }
+
+    &--vector {
+      width: 60px;
+      height: 0;
+      border: 1px solid #FFFFFF;
+    }
+
+    &--name2 {
+      background: #4886FF;
+      transform: rotate(-2deg);
+      width: 100%;
+      height: 73px;
+      position: relative;
+      overflow: hidden;
+      padding: 15px;
+      margin-bottom: 10rem;
+    }
+
+    &--projects {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &--block {
+      width: 380px;
+      height: 172.24px;
+      background: linear-gradient(114deg, #FFA800 46%, rgba(255, 169, 3, 0.5) 100%);
+      border-radius: 30px 30px 0 0;
+
+    }
+
+    &--girl {
+      position: absolute;
+      top: 53.5rem;
+      left: 10rem;
+    }
+
+    &--box {
+      background: #FFFFFF;
+      border-radius: 0 0 30px 30px;
+      width: 380px;
+      height: 458.63px;
+      padding: 10px 15px;
+    }
+
+    &--title3 {
+      font-family: 'Muller', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 40px;
+      display: flex;
+      align-items: center;
+      color: #030303;
+      padding-bottom: 15px;
+    }
+
+    &--desc1 {
+      font-family: 'SF Pro Display', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 130%;
+      color: rgba(27, 27, 27, 0.8);
+      padding-bottom: 15px;
+    }
+
+    &--buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &--buttons button:hover {
+      color: #4886FF;
+      border: 2px solid #4886FF;
+    }
+
+    &--btn1 {
+      border: 1px solid #000000;
+      border-radius: 30px;
+      width: 76px;
+      height: 43px;
+      font-family: 'SF Pro Display', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: #000000;
+    }
+
+    &--btn2 {
+      width: 111px;
+      height: 43px;
+      font-family: 'SF Pro Display', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: #000000;
+      border: 1px solid #000000;
+      border-radius: 30px;
+    }
+
+    &--btn3 {
+      width: 50px;
+      height: 43px;
+      font-family: 'SF Pro Display', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: #000000;
+      border: 1px solid #000000;
+      border-radius: 30px;
+    }
+
+    &--buttons2 button {
+      margin: 5px 2px;
+    }
+
+    &--buttons2 button:hover {
+      color: #4886FF;
+      border: 2px solid #4886FF;
+    }
+
+    &--btn4 {
+      width: 64px;
+      height: 43px;
+      font-family: 'SF Pro Display', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: #000000;
+      border: 1px solid #000000;
+      border-radius: 30px;
+    }
+
+    &--btn5 {
+      font-family: 'SF Pro Display', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: #000000;
+      border: 1px solid #000000;
+      border-radius: 30px;
+      width: 136px;
+      height: 43px;
+    }
+
+    &--btn6 {
+      width: 329px;
+      height: 50px;
+      background: #EC3025;
+      border: 1px solid #EC3025;
+      border-radius: 44px;
+      font-family: 'SF Pro Display', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: white;
+      margin-top: 20px;
+    }
+    &--btn6:hover {
+      background: #FFFFFF;
+      color: #EC3025;
+    }
+    &--design{
+      position: relative;
+      top: -99px;
+      left: 6rem;
+    }
+    &--backend{
+      position: relative;
+      top: -99px;
+      left: 6rem;
+    }
+    &--but{
+      padding-top: 5rem;
+    }
+  }
+}
+
