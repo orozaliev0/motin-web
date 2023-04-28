@@ -4,6 +4,7 @@ import '../../../style/main/AboutUs.scss'
 
 const AboutUS = () => {
     return (
+        <div></div>
         <section id="about">
             <div className="container">
                 <div className="about">
@@ -47,7 +48,6 @@ const AboutUS = () => {
 
 
     );
-};
 
 export default AboutUS;
 
