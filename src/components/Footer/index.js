@@ -44,12 +44,6 @@ const Footer = () => {
                 </div>
             </div>
         </section>
-    )
-}
-    return (
-        <div>
-            
-        </div>
     );
 };
 

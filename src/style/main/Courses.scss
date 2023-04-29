@@ -1,6 +1,5 @@
 #course {
   background: #EFEFEF;
-  padding-top: 100px;
   padding-bottom: 40px;
   .course {
     &--anim {
@@ -62,9 +61,9 @@
     }
 
     &--girl {
-      position: absolute;
-      top: 53.5rem;
-      left: 10rem;
+      position: relative;
+      bottom: 99px;
+      left:   90px;
     }
 
     &--box {

@@ -1,5 +1,4 @@
 #about{
-  background: #EFEFEF;
   .about{
     &--block{
       display: flex;
@@ -34,6 +33,7 @@
       cursor: pointer;
     }
     &--box{
+      margin: 50px 0 70px 50px;
       box-sizing: border-box;
       width: 1220px;
       height: 229px;
