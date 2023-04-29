@@ -40,22 +40,11 @@ const AboutUS = () => {
                                 <p className="about--description">Трудоустроились</p>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
             </div>
-
         </section>
 
 
     );
-};
-
 export default AboutUS;
-
-
-
-
-
-

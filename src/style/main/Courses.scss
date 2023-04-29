@@ -64,7 +64,10 @@
       position: relative;
       bottom: 99px;
       left:   90px;
-    }
+      top: -99px;
+      left: 5.5rem;
+      //padding: 0 0 0 90px;
+      }
 
     &--box {
       background: #FFFFFF;
