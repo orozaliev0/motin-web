@@ -91,6 +91,8 @@ const Hero = () => {
                 <div className="backdropBlur"></div>
 
             </div>
+        <div>
+   
         </div>
     );
 };

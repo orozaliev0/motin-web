@@ -46,5 +46,11 @@ const Footer = () => {
         </section>
     )
 }
+    return (
+        <div>
+            
+        </div>
+    );
+};
 
 export default Footer
