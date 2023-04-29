@@ -5,56 +5,51 @@ import imgCourse from "../../../image/main/title.svg"
 import imgCourse2 from "../../../image/main/girlFront.svg"
 import imgCourse3 from "../../../image/main/dizain.svg"
 import imgCourse4 from "../../../image/main/backend.svg"
-import Smile from "../../../image/main/smile-face.svg";
-import Open from "../../../image/main/open-key.svg";
-import Select from "../../../image/main/select.svg";
-import Rocket from "../../../image/main/rocket.svg";
-import {Link} from "react-router-dom";
 
 
 const Courses = () => {
     return (
-        <section id="course" >
+        <section id="course">
             <div className="course">
                 <div className="course--anim">
-                        <marquee behavior="initial" scrollamount="25">
-                            <div className="course--name">
+                    <marquee behavior="initial" scrollamount="25">
+                        <div className="course--name">
                             <h1 className="course--title">КУРСЫ</h1>
                             <div className="course--vector"></div>
-                                <img src={imgCourse} className="course--title2" alt=""/>
-                                <div className="course--vector"></div>
-                                <h1 className="course--title">КУРСЫ</h1>
-                                <div className="course--vector"></div>
-                                <img src={imgCourse} className="course--title2" alt=""/>
-                                <div className="course--vector"></div>
-                                <h1 className="course--title">КУРСЫ</h1>
-                                <div className="course--vector"></div>
-                                <img src={imgCourse} className="course--title2" alt=""/>
-                                <div className="course--vector"></div>
-                                <h1 className="course--title">КУРСЫ</h1>
-                                <div className="course--vector"></div>
-                                <img src={imgCourse} className="course--title2" alt=""/>
-                            </div>
-                        </marquee>
-                </div>
-                        <div className="course--name2">
-                            <marquee behavior="initial" scrollamount="25">
-                            <div className="course--name">
-                                <h1 className="course--title">FRONTEND</h1>
-                                <h1 className="course--title">BACKEND</h1>
-                                <h1 className="course--title">UX UI</h1>
-                                <img src={icon5} alt=""/>
-                                <h1 className="course--title">FRONTEND</h1>
-                                <h1 className="course--title">BACKEND</h1>
-                                <h1 className="course--title">UX UI</h1>
-                                <img src={icon5} alt=""/>
-                                <h1 className="course--title">FRONTEND</h1>
-                                <h1 className="course--title">BACKEND</h1>
-                                <h1 className="course--title">UX UI</h1>
-                                <img src={icon5} className="course--title2" alt=""/>
-                            </div>
-                            </marquee>
+                            <img src={imgCourse} className="course--title2" alt=""/>
+                            <div className="course--vector"></div>
+                            <h1 className="course--title">КУРСЫ</h1>
+                            <div className="course--vector"></div>
+                            <img src={imgCourse} className="course--title2" alt=""/>
+                            <div className="course--vector"></div>
+                            <h1 className="course--title">КУРСЫ</h1>
+                            <div className="course--vector"></div>
+                            <img src={imgCourse} className="course--title2" alt=""/>
+                            <div className="course--vector"></div>
+                            <h1 className="course--title">КУРСЫ</h1>
+                            <div className="course--vector"></div>
+                            <img src={imgCourse} className="course--title2" alt=""/>
                         </div>
+                    </marquee>
+                </div>
+                <div className="course--name2">
+                    <marquee behavior="initial" scrollamount="25">
+                        <div className="course--name">
+                            <h1 className="course--title">FRONTEND</h1>
+                            <h1 className="course--title">BACKEND</h1>
+                            <h1 className="course--title">UX UI</h1>
+                            <img src={icon5} alt=""/>
+                            <h1 className="course--title">FRONTEND</h1>
+                            <h1 className="course--title">BACKEND</h1>
+                            <h1 className="course--title">UX UI</h1>
+                            <img src={icon5} alt=""/>
+                            <h1 className="course--title">FRONTEND</h1>
+                            <h1 className="course--title">BACKEND</h1>
+                            <h1 className="course--title">UX UI</h1>
+                            <img src={icon5} className="course--title2" alt=""/>
+                        </div>
+                    </marquee>
+                </div>
 
                 <div className="course--projects">
 
@@ -64,8 +59,8 @@ const Courses = () => {
                         </div>
                         <div className="course--box">
                             <h1 className="course--title3">FRONTEND</h1>
-                            <p className="course--desc1">Фронтенд-разработчик — <br/>
-                                это специалист, который создаёт <br/> пользовательские интерфейсы</p>
+                            <p className="course--desc1">Фронтенд-разработчик — <br/>
+                                это специалист, который создаёт <br/> пользовательские интерфейсы</p>
                             <div className="course--buttons">
                                 <button className="course--btn1">HTML</button>
                                 <button className="course--btn1">React</button>
@@ -76,7 +71,7 @@ const Courses = () => {
                                 <button className="course--btn4">CSS</button>
                                 <button className="course--btn1">SASS</button>
                                 <button className="course--btn5">+Английский</button>
-                                <button className="course--btn5">7 месяцев</button>
+                                <button className="course--btn5">7 месяцев</button>
                             </div>
                             <button className="course--btn6">Подробнее</button>
                             <button className="course--btn6">Оставить заявку</button>
@@ -88,7 +83,8 @@ const Courses = () => {
                         </div>
                         <div className="course--box">
                             <h1 className="course--title3">UX/UI DESIGN</h1>
-                            <p className="course--desc1">UX/UI-дизайн — это процесс создания <br/> интерактивных, удобных интерфейсов</p>
+                            <p className="course--desc1">UX/UI-дизайн — это процесс создания <br/> интерактивных,
+                                удобных интерфейсов</p>
                             <div className="course--buttons">
                                 <button className="course--btn1">Figma</button>
                                 <button className="course--btn2">Adobe XD</button>
@@ -96,9 +92,9 @@ const Courses = () => {
                             </div>
                             <div className="course--buttons2">
                                 <button className="course--btn5">+Английский</button>
-                                <button className="course--btn5">3 месяцев</button>
+                                <button className="course--btn5">3 месяцев</button>
                             </div>
-                            <div className="course--but">
+                            <div className="course--but1">
                                 <button className="course--btn6">Подробнее</button>
                                 <button className="course--btn6">Оставить заявку</button>
                             </div>
@@ -107,12 +103,13 @@ const Courses = () => {
                     </div>
 
                     <div>
-                        <div className="course--block" >
+                        <div className="course--block">
                             <img src={imgCourse4} className="course--design" alt=""/>
                         </div>
                         <div className="course--box">
                             <h1 className="course--title3">BACKEND</h1>
-                            <p className="course--desc1">Бэкенд-разработчик — это специалист, <br/> который отвечает за внутреннюю и вычислительную логику веб-сайта</p>
+                            <p className="course--desc1">Бэкенд-разработчик — это специалист, <br/> который отвечает за
+                                внутреннюю и вычислительную логику веб-сайта</p>
                             <div className="course--buttons">
                                 <button className="course--btn1">HTML</button>
                                 <button className="course--btn1">React</button>
@@ -123,7 +120,7 @@ const Courses = () => {
                             <div className="course--buttons2">
 
                                 <button className="course--btn5">+Английский</button>
-                                <button className="course--btn5">3 месяцев</button>
+                                <button className="course--btn5">3 месяцев</button>
                             </div>
                             <div className="course--but">
                                 <button className="course--btn6">Подробнее</button>
@@ -134,6 +131,27 @@ const Courses = () => {
                     </div>
                 </div>
 
+            </div>
+            <div className="container">
+                <div className="motion">
+                    <div className="motion--box">
+                        <button className="motion--btn1">КРУУУТОО...</button>
+                        <img src={imgCourse5} className="motion--image" alt=""/>
+                    </div>
+                    <div className="motion--block">
+                        <div className="motion--titles">
+                            <div>
+                                <h1 className="motion--title1">ПРОБНЫЕ УРОКИ</h1>                    <p
+                                className="motion--desc1">Прочуствуй дружную атмосферу нашей <br/>
+                                академии! Оставь заявку на пробный <br/> урок и стань ближе к своей цели!</p></div>
+                            <div className="motion--left"><h1 className="motion--title2">18 февраля <br/> <span
+                                className="motion--desc2">в</span> 18:00 <span className="motion--desc2">мастер класс <br/>  по </span> FRONTEND
+                            </h1>
+                                <button className="motion--btn2">Записаться</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     );
