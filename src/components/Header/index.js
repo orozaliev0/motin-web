@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Motion from'../../image/main/LogoMotion.png'
+import Motion from '../../image/main/LogoMotion.png'
 import language from '../../image/main/Ellipse 274.png'
 import '../../style/main/Header.scss'
 import {NavLink} from "react-router-dom";
@@ -7,10 +7,10 @@ import Courses from "../Header/Courses";
 
 const Header = () => {
 
-    const [courses,setCourses] = useState(false)
+    const [courses, setCourses] = useState(false)
 
     return (
-        <div id='header'  onMouseLeave={() => setCourses(false)}>
+        <div id='header' onMouseLeave={() => setCourses(false)}>
             <div className="container">
                 <div className="header">
                     <NavLink to={'/'}>
@@ -19,7 +19,7 @@ const Header = () => {
                     <div className="header__block">
                         <NavLink to={'/'}>Главное</NavLink>
                         <NavLink to={"AboutUs"}>O нас</NavLink>
-                        <a onMouseOver={()=> setCourses(true)}> {courses ?  <Courses/> : ''}O курсах</a>
+                        <a onMouseOver={() => setCourses(true)}> {courses ? <Courses/> : ''}O курсах</a>
                         <NavLink to={"club"}>Клуб</NavLink>
                         <NavLink to={"contact"}>Контакты</NavLink>
                     </div>
@@ -29,8 +29,8 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-        <div>
-            
+            <div>
+            </div>
         </div>
     );
 };
