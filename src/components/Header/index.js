@@ -18,7 +18,7 @@ const Header = () => {
                     </NavLink>
                     <div className="header__block">
                         <NavLink to={'/'}>Главное</NavLink>
-                        <NavLink to={"AboutUs"}>O нас</NavLink>
+                        <NavLink to={"/about_us"}>O нас</NavLink>
                         <a onMouseOver={() => setCourses(true)}> {courses ? <Courses/> : ''}O курсах</a>
                         <NavLink to={"club"}>Клуб</NavLink>
                         <NavLink to={"contact"}>Контакты</NavLink>
