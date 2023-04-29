@@ -136,7 +136,7 @@ const Courses = () => {
                 <div className="motion">
                     <div className="motion--box">
                         <button className="motion--btn1">КРУУУТОО...</button>
-                        <img src={imgCourse5} className="motion--image" alt=""/>
+                        {/*<img src={imgCourse5} className="motion--image" alt=""/>*/}
                     </div>
                     <div className="motion--block">
                         <div className="motion--titles">

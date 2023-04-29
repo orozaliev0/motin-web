@@ -5,6 +5,7 @@ import License from "./License/License";
 import Gallery from "./Gallery/Gallery";
 
 const AboutUs = () => {
+
     return (
         <div>
             <Hero/>

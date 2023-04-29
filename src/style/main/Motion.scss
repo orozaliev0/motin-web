@@ -457,57 +457,73 @@
 					font-size: 23px;
 				}
 			}
+
 			&--study {
 				&__block {
 					&--smile {
 						width: 279px;
 						flex-wrap: wrap;
+
 						h6 {
 							font-size: 15px;
 						}
+
 						p {
 							font-size: 13px;
 							width: 217px;
 						}
+
 						img {
 							width: 26px;
 						}
 					}
-					&--open{
+
+					&--open {
 						width: 279px;
 						flex-wrap: wrap;
+
 						h6 {
 							font-size: 15px;
 						}
+
 						p {
 							font-size: 13px;
 						}
+
 						img {
 							width: 26px;
 						}
 					}
+
 					&--en {
 						width: 279px;
 						flex-wrap: wrap;
+
 						h6 {
 							font-size: 15px;
 						}
+
 						p {
 							font-size: 13px;
 						}
+
 						img {
 							width: 26px;
 						}
 					}
+
 					&--rocket {
 						width: 279px;
 						flex-wrap: wrap;
+
 						h6 {
 							font-size: 15px;
 						}
+
 						p {
 							font-size: 13px;
 						}
+
 						img {
 							width: 26px;
 						}
@@ -516,5 +532,6 @@
 			}
 		}
 	}
+}
 }
 

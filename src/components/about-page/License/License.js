@@ -3,7 +3,7 @@ import '../../../style/aboutUs/License.scss'
 const License = () => {
     return (
         <div>
-            
+            Licence About
         </div>
     );
 };

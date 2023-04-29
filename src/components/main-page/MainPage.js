@@ -2,7 +2,6 @@ import React from 'react';
 import Hero from "./Hero/Hero";
 import AboutUS from "./AboutUs/AboutUS";
 import Courses from "./Courses/Courses";
-import Motion from "./Motion/Motion";
 import Project from "./Project";
 import Slick from "./Slick";
 import Last from "./Last/Last";
@@ -15,7 +14,7 @@ const MainPage = () => {
             <Hero/>
             <AboutUS/>
             <Courses/>
-            <Motion/>
+            {/*<Motion/>*/}
             <Project/>
             <Slick/>
             <FAQ/>
