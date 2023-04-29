@@ -5,7 +5,7 @@ import imgCourse from "../../../image/main/title.svg"
 import imgCourse2 from "../../../image/main/girlFront.svg"
 import imgCourse3 from "../../../image/main/dizain.svg"
 import imgCourse4 from "../../../image/main/backend.svg"
-import imgCourse5 from "../../../image/main/peeps-avatar.svg"
+
 
 const Courses = () => {
     return (
