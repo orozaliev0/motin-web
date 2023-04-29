@@ -1,0 +1,41 @@
+#header{
+  height: 103px;
+  background: #f8f8f8;
+  backdrop-filter: blur(12.5px);
+  padding-top: 30px;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__block{
+      display: flex;
+
+      a{
+        padding: 6px 20px;
+        font-family: 'SF Pro Display',sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: rgba(27, 27, 27, 0.6);
+        cursor: pointer;
+        &:hover{
+          color: black;
+        }
+      }
+    }
+    &__language{
+      display: flex;
+      span{
+        padding: 0 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #header{
+    height: 83px;
+    padding: 25px 0;
+  }
+}
