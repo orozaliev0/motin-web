@@ -15,6 +15,8 @@ const Frontend = () => {
         <div id="frontEnd">
             <div className="frontEnd">
                 <div className="container">
+
+
                     <div className="frontEnd--inform">
                         <div className="frontEnd--inform__question">
 
@@ -250,9 +252,13 @@ const Frontend = () => {
                         </div>
                     </div>
                 </div>
+
+                <div className="accordionFront">
+
+                </div>
+
+
             </div>
-
-
         </div>
 
     );
