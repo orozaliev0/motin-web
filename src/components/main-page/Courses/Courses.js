@@ -5,7 +5,7 @@ import imgCourse from "../../../image/main/title.svg"
 import imgCourse2 from "../../../image/main/girlFront.svg"
 import imgCourse3 from "../../../image/main/dizain.svg"
 import imgCourse4 from "../../../image/main/backend.svg"
-
+import imgCourse5 from "./../../../image/about-us/peeps-avatar.svg"
 
 const Courses = () => {
     return (
@@ -133,21 +133,21 @@ const Courses = () => {
 
             </div>
             <div className="container">
-                <div className="motion">
-                    <div className="motion--box">
-                        <button className="motion--btn1">КРУУУТОО...</button>
-                        {/*<img src={imgCourse5} className="motion--image" alt=""/>*/}
+                <div className="course2">
+                    <div className="course2--box">
+                        <button className="course2--btn1">КРУУУТОО...</button>
+                        <img src={imgCourse5} className="course2--image" alt=""/>
                     </div>
-                    <div className="motion--block">
-                        <div className="motion--titles">
+                    <div className="course2--block">
+                        <div className="course2--titles">
                             <div>
-                                <h1 className="motion--title1">ПРОБНЫЕ УРОКИ</h1>                    <p
-                                className="motion--desc1">Прочуствуй дружную атмосферу нашей <br/>
+                                <h1 className="course2--title1">ПРОБНЫЕ УРОКИ</h1>                    <p
+                                className="course2--desc1">Прочуствуй дружную атмосферу нашей <br/>
                                 академии! Оставь заявку на пробный <br/> урок и стань ближе к своей цели!</p></div>
-                            <div className="motion--left"><h1 className="motion--title2">18 февраля <br/> <span
-                                className="motion--desc2">в</span> 18:00 <span className="motion--desc2">мастер класс <br/>  по </span> FRONTEND
+                            <div className="course2--left"><h1 className="course2--title2">18 февраля <br/> <span
+                                className="course2--desc2">в</span> 18:00 <span className="course2--desc2">мастер класс <br/>  по </span> FRONTEND
                             </h1>
-                                <button className="motion--btn2">Записаться</button>
+                                <button className="course2--btn2">Записаться</button>
                             </div>
                         </div>
                     </div>
