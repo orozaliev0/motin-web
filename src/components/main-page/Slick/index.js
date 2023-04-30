@@ -33,7 +33,7 @@ const Slick = () => {
                         <Slider {...settings}>
 
                             <div>
-                               <div className="slick--card__play">
+                                <div className="slick--card__play">
                                     <div className="slick--card__play--burch">
                                         <img src={play} alt="img"/>
                                     </div>
@@ -75,4 +75,4 @@ const Slick = () => {
     );
 };
 
-export default Slick;
+export default Slick;
