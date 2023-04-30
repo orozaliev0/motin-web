@@ -1,6 +1,4 @@
 #course {
-  background: #EFEFEF;
-  padding-bottom: 40px;
   .course {
     &--anim {
       width: 100%;
@@ -62,10 +60,6 @@
 
     &--girl {
       position: relative;
-      top: -99px;
-      left: 5.5rem;
-      //padding: 0 0 0 90px;
-    }
 
     &--box {
       background: #FFFFFF;
@@ -176,37 +170,39 @@
       height: 43px;
     }
 
-    &--btn6 {
-      width: 329px;
-      height: 50px;
-      background: #EC3025;
-      border: 1px solid #EC3025;
-      border-radius: 44px;
-      font-family: 'SF Pro Display', sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 24px;
-      color: white;
-      margin-top: 20px;
-    }
-    &--btn6:hover {
-      background: #FFFFFF;
-      color: #EC3025;
-    }
-    &--design{
-      position: relative;
-      top: -99px;
-      left: 6rem;
-    }
-    &--backend{
-      position: relative;
-      top: -99px;
-      left: 6rem;
-    }
-    &--but{
-      padding-top: 5rem;
+      &--title2 {
+        font-family: 'SF Pro Display', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 120%;
+        color: #FFFFFF;
+        padding-bottom: 20px;
+      }
+
+      &--btn2 {
+        font-family: 'SF Pro Display', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FF0000;
+        width: 334px;
+        height: 50px;
+        background: #F8F8F8;
+        border-radius: 44px;
+      }
+
+      &--desc2 {
+        font-family: 'SF Pro Display', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      &--left {
+        margin-left: 20px;
+      }
     }
   }
-}
-

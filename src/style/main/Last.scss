@@ -4,7 +4,6 @@
   .last{
     &--block{
       display: flex;
-      justify-content: space-between;
     }
     &--title{
       font-family: 'Muller',sans-serif;
@@ -22,6 +21,9 @@
       font-size: 18px;
       line-height: 130%;
       color: rgba(255, 255, 255, 0.8);
+    }
+    &--input2{
+      padding-left: 9rem;
     }
     &--input{
       font-family: 'SF Pro Display',sans-serif;
