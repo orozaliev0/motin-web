@@ -7,6 +7,8 @@ import Slick from "./Slick";
 import Last from "./Last/Last";
 import FAQ from "./FAQ/FAQ";
 
+import Motion from "./Motion/Motion";
+
 const MainPage = () => {
 
     return (
@@ -14,7 +16,7 @@ const MainPage = () => {
             <Hero/>
             <AboutUS/>
             <Courses/>
-            {/*<Motion/>*/}
+            <Motion/>
             <Project/>
             <Slick/>
             <FAQ/>

@@ -6,6 +6,7 @@ import ClubPage from "./components/club-page/ClubPage";
 import Frontend from "./pages/Frontend/Frontend";
 import UiUx from "./pages/UI-UX/Ui-Ux";
 import Backend from "./pages/Backend/Backend";
+import MainFr from "./pages/Frontend/MainFr";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Route path='/' element={<MainPage/>}/>
         <Route path='/about_us' element={<AboutUs/>}/>
         <Route path='/it_club' element={<ClubPage/>}/>
-        <Route path='/frontend' element={<Frontend/>}/>
+        <Route path='/MainFr' element={<MainFr/>}/>
         <Route path='/UxUi' element={<UiUx/>}/>
         <Route path='/backend' element={<Backend/>}/>
 

@@ -1,7 +1,8 @@
 #motion {
-	padding: 100px 0;
-		.motion {
-	background: #EFEFEF;
+	//padding: 100px 0;
+	padding: 100px 0 70px 0;
+	background: #f5f5f5;
+
 	.motion {
 		display: flex;
 		align-items: start;
@@ -13,7 +14,6 @@
 				line-height: 36px;
 				color: #000000;
 				width: 370px;
-
 				span {
 					color: #ec3025;
 				}
@@ -140,9 +140,7 @@
 			}
 		}
 	}
-}
-
-@media (max-width: 1200px) {
+}@media (max-width: 1200px) {
 	#motion {
 		.motion {
 			&--text {
@@ -197,7 +195,6 @@
 		}
 	}
 }
-
 @media (max-width: 1040px) {
 	#motion {
 		.motion {
@@ -340,7 +337,6 @@
 		}
 	}
 }
-
 @media (max-width: 414px) {
 	#motion {
 		padding: 50px 0;
@@ -457,73 +453,57 @@
 					font-size: 23px;
 				}
 			}
-
 			&--study {
 				&__block {
 					&--smile {
 						width: 279px;
 						flex-wrap: wrap;
-
 						h6 {
 							font-size: 15px;
 						}
-
 						p {
 							font-size: 13px;
 							width: 217px;
 						}
-
 						img {
 							width: 26px;
 						}
 					}
-
-					&--open {
+					&--open{
 						width: 279px;
 						flex-wrap: wrap;
-
 						h6 {
 							font-size: 15px;
 						}
-
 						p {
 							font-size: 13px;
 						}
-
 						img {
 							width: 26px;
 						}
 					}
-
 					&--en {
 						width: 279px;
 						flex-wrap: wrap;
-
 						h6 {
 							font-size: 15px;
 						}
-
 						p {
 							font-size: 13px;
 						}
-
 						img {
 							width: 26px;
 						}
 					}
-
 					&--rocket {
 						width: 279px;
 						flex-wrap: wrap;
-
 						h6 {
 							font-size: 15px;
 						}
-
 						p {
 							font-size: 13px;
 						}
-
 						img {
 							width: 26px;
 						}
@@ -533,5 +513,3 @@
 		}
 	}
 }
-}
-
