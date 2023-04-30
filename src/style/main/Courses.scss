@@ -1,10 +1,5 @@
 #course {
-
-    padding: 120px 0;
-    background: #EFEFEF;
   .course {
-    padding: 60px 0;
-
     &--anim {
       width: 100%;
       height: 73px;
@@ -65,220 +60,115 @@
 
     &--girl {
       position: relative;
-      bottom: 99px;
-      left: 98px;
+
+    &--box {
+      background: #FFFFFF;
+      border-radius: 0 0 30px 30px;
+      width: 380px;
+      height: 458.63px;
+      padding: 10px 15px;
     }
-      &--box {
-        background: #FFFFFF;
-        border-radius: 0 0 30px 30px;
-        width: 380px;
-        height: 458.63px;
-        padding: 10px 15px;
-      }
 
-      &--title3 {
-        font-family: 'Muller', sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 40px;
-        display: flex;
-        align-items: center;
-        color: #030303;
-        padding-bottom: 15px;
-      }
-
-      &--desc1 {
-        font-family: 'SF Pro Display', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 130%;
-        color: rgba(27, 27, 27, 0.8);
-        padding-bottom: 15px;
-      }
-
-      &--buttons {
-        display: flex;
-        justify-content: space-between;
-      }
-
-      &--buttons button:hover {
-        color: #4886FF;
-        border: 2px solid #4886FF;
-        transition: .3s;
-      }
-
-      &--btn1 {
-        border: 1px solid #000000;
-        border-radius: 30px;
-        width: 76px;
-        height: 43px;
-        font-family: 'SF Pro Display', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        color: #000000;
-      }
-
-      &--btn2 {
-        width: 111px;
-        height: 43px;
-        font-family: 'SF Pro Display', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        color: #000000;
-        border: 1px solid #000000;
-        border-radius: 30px;
-      }
-
-      &--btn3 {
-        width: 50px;
-        height: 43px;
-        font-family: 'SF Pro Display', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        color: #000000;
-        border: 1px solid #000000;
-        border-radius: 30px;
-      }
-
-      &--buttons2 button {
-        margin: 5px 2px;
-      }
-
-      &--buttons2 button:hover {
-        color: #4886FF;
-        border: 2px solid #4886FF;
-      }
-
-      &--btn4 {
-        width: 64px;
-        height: 43px;
-        font-family: 'SF Pro Display', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        color: #000000;
-        border: 1px solid #000000;
-        border-radius: 30px;
-      }
-
-      &--btn5 {
-        font-family: 'SF Pro Display', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        color: #000000;
-        border: 1px solid #000000;
-        border-radius: 30px;
-        width: 136px;
-        height: 43px;
-      }
-
-      &--btn6 {
-        width: 329px;
-        height: 50px;
-        background: #EC3025;
-        border: 1px solid #EC3025;
-        border-radius: 44px;
-        font-family: 'SF Pro Display', sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
-        color: white;
-        margin-top: 20px;
-      }
-
-      &--btn6:hover {
-        background: #FFFFFF;
-        color: #EC3025;
-        transition: .3s;
-      }
-
-      &--design {
-        position: relative;
-        top: -99px;
-        left: 6rem;
-      }
-
-      &--backend {
-        position: relative;
-        top: -99px;
-        left: 6rem;
-      }
-
-      &--but1 {
-        padding-top: 5rem;
-      }
-
-      &--but {
-        padding-top: 3rem;
-      }
-  }
-    .course2 {
+    &--title3 {
+      font-family: 'Muller', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 40px;
       display: flex;
+      align-items: center;
+      color: #030303;
+      padding-bottom: 15px;
+    }
 
-      &--box {
-        width: 383px;
-        height: 186px;
-        background: linear-gradient(130deg, #000000 35.42%, rgba(31, 31, 31, 0.9) 100%);
-        border-radius: 30px;
-        margin-top: 9.5rem;
-      }
+    &--desc1 {
+      font-family: 'SF Pro Display', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 130%;
+      color: rgba(27, 27, 27, 0.8);
+      padding-bottom: 15px;
+    }
 
-      &--btn1 {
-        width: 152px;
-        height: 50px;
-        background: #4886FF;
-        border-radius: 30px;
-        transform: rotate(-16.64deg);
-        color: #FFFFFF;
-        position: relative;
-        left: 11.5rem;
-        top: 4.5rem;
-      }
+    &--buttons {
+      display: flex;
+      justify-content: space-between;
+    }
 
-      &--image {
-        position: relative;
-        top: -13rem;
-        left: 2rem;
-      }
+    &--buttons button:hover {
+      color: #4886FF;
+      border: 2px solid #4886FF;
+    }
 
-      &--block {
-        width: 800px;
-        height: 339px;
-        background: #FF563F;
-        border-radius: 30px;
-        margin-left: 7rem;
-        padding: 50px 35px;
-      }
+    &--btn1 {
+      border: 1px solid #000000;
+      border-radius: 30px;
+      width: 76px;
+      height: 43px;
+      font-family: 'SF Pro Display', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: #000000;
+    }
 
-      &--titles {
-        display: flex;
-      }
+    &--btn2 {
+      width: 111px;
+      height: 43px;
+      font-family: 'SF Pro Display', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: #000000;
+      border: 1px solid #000000;
+      border-radius: 30px;
+    }
 
-      &--title1 {
-        font-family: 'Muller', sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 36px;
-        color: #FFFFFF;
-        padding-bottom: 15px;
-      }
+    &--btn3 {
+      width: 50px;
+      height: 43px;
+      font-family: 'SF Pro Display', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: #000000;
+      border: 1px solid #000000;
+      border-radius: 30px;
+    }
 
-      &--desc1 {
-        font-family: 'SF Pro Display', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 19px;
-        line-height: 140%;
-        color: rgba(255, 255, 255, 0.8);
-      }
+    &--buttons2 button {
+      margin: 5px 2px;
+    }
+
+    &--buttons2 button:hover {
+      color: #4886FF;
+      border: 2px solid #4886FF;
+    }
+
+    &--btn4 {
+      width: 64px;
+      height: 43px;
+      font-family: 'SF Pro Display', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: #000000;
+      border: 1px solid #000000;
+      border-radius: 30px;
+    }
+
+    &--btn5 {
+      font-family: 'SF Pro Display', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: #000000;
+      border: 1px solid #000000;
+      border-radius: 30px;
+      width: 136px;
+      height: 43px;
+    }
 
       &--title2 {
         font-family: 'SF Pro Display', sans-serif;
