@@ -394,4 +394,403 @@
           }
         }
       }
+    }
+
+  }}
+#slick {
+  padding: 80px 0;
+  background: rgba(239, 239, 239, 1);
+
+  .slick {
+    position: relative;
+
+    h1 {
+      top: 1rem;
+      font-family: 'Muller', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 36px;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      color: #000000;
+    }
+
+    &--card {
+      margin-left: 421px;
+      //display: flex;
+      &__play {
+        margin: 010px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 299px;
+        height: 256px;
+        background: #121212;
+        border-radius: 30px;
+
+        &--burch {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 143px;
+          height: 143px;
+          border-radius: 50px;
+          background: #D9D9D9;
+        }
+      }
+    }
+  }
+}
+.slick-prev {
+  left: -223px;
+  top: 262px;
+  font-size: 20px !important;
+}
+
+.slick-next {
+  left: -90px !important;
+  top: 250px !important;
+  transition: 3s;
+  font-size: 30px !important;
+  color: red !important;
+}
+
+.slick-next:hover {
+  transform: scale(1);
+  background: red !important;
+}
+
+.slick-prev {
+  transition: 3s;
+  left: -150px !important;
+  top: 250px !important;
+}
+
+.slick-prev:hover {
+  transform: scale(1);
+  background: red !important;
+}
+
+.slick-dots li button {
+  display: none !important;
+}
+
+@media (max-width: 1140px) {
+  #slick {
+    .slick {
+      h1 {
+        top: 1rem;
+        font-family: "Muller", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 36px;
+      }
+
+      &--card {
+        margin-left: 242px;
+
+        &__play {
+          &--burch {
+          }
+        }
+      }
+    }
+  }
+  .slick-prev {
+    transition: 3s;
+    left: -150px !important;
+    top: 220px !important;
+  }
+  .slick-next {
+    left: -90px !important;
+    top: 220px !important;
+    transition: 3s;
+    font-size: 30px !important;
+    color: red !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  #slick {
+    .slick {
+      &--card {
+        margin-left: 309px;
+
+        &__play {
+          width: 224px;
+          height: 211px;
+
+          &--burch {
+            width: 116px;
+            height: 107px;
+
+            img {
+              width: 46%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #slick {
+    .slick {
+      &--card {
+        margin-left: 242px;
+
+        &__play {
+          &--burch {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 999px) {
+  #slick {
+    .slick {
+      h1 {
+        top: -4rem;
+      }
+
+      &--card {
+        margin-left: 12px;
+
+        &__play {
+          &--burch {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .slick-prev {
+    transition: 2s;
+    left: 330px !important;
+    top: 270px !important;
+  }
+  .slick-next {
+    left: 370px !important;
+    top: 270px !important;
+    transition: 2s;
+    font-size: 30px !important;
+  }
+
+  #slick {
+    .slick {
+      h1 {
+        top: -3rem;
+      }
+
+      &--card {
+        margin-left: 12px;
+
+        &__play {
+          &--burch {
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  .slick-prev {
+    transition: 2s;
+    left: 330px !important;
+    top: 240px !important;
+  }
+  .slick-next {
+    left: 370px !important;
+    top: 240px !important;
+    transition: 2s;
+    font-size: 30px !important;
+  }
+  #slick {
+    .slick {
+      &--card {
+        &__play {
+          width: 214px;
+          height: 184px;
+
+          &--burch {
+            width: 99px;
+            height: 86px;
+
+            img {
+              width: 34%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 576px) {
+  #slick {
+    .slick {
+      &--card {
+        width: 107%;
+        margin-left: -9px;
+
+        &__play {
+          width: 174px;
+          height: 166px;
+
+          &--burch {
+            width: 71px;
+            height: 62px;
+          }
+        }
+      }
+    }
+  }
+  .slick-prev {
+    transition: 2s;
+    left: 220px !important;
+    top: 230px !important;
+  }
+  .slick-next {
+    left: 370px !important;
+    top: 230px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .slick-prev {
+    transition: 2s;
+    left: 160px !important;
+    top: 160px !important;
+  }
+  .slick-next {
+    left: 200px !important;
+    top: 160px !important;
+  }
+  #slick {
+    .slick {
+      &--card {
+        &__play {
+          width: 124px;
+          height: 122px;
+
+          &--burch {
+            width: 47px;
+            height: 47px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  #slick {
+    .slick {
+      &--card {
+        &__play {
+          &--burch {
+            width: 47px;
+            height: 47px;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #slick {
+    .slick {
+      &--card {
+        &__play {
+          &--burch {
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 390px) {
+  #slick {
+    .slick {
+      &--card {
+        &__play {
+          &--burch {
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 380px) {
+  #slick {
+    .slick {
+      &--card {
+        &__play {
+          &--burch {
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 370px) {
+  .slick-prev {
+    transition: 2s;
+    left: 70px !important;
+    top: 135px !important;
+  }
+  .slick-next {
+    left: 220px !important;
+    top: 135px !important;
+  }
+  #slick {
+    .slick {
+      h1 {
+        top: -2rem;
+        font-size: 18px;
+      }
+
+      &--card {
+        &__play {
+          width: 93px;
+          height: 107px;
+
+          &--burch {
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 321px) {
+    #slick {
+      .slick {
+        &--card {
+          &__play {
+            width: 93px;
+            height: 107px;
+
+            &--burch {
+            }
+          }
+        }
+      }
     }}}
