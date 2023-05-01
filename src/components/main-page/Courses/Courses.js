@@ -1,11 +1,12 @@
 import React from 'react';
-import '../../../style/main/Courses.scss'
+// import '../../../style/main/Courses.scss'
 import icon5 from "../../../image/main/Dawn.svg"
 import imgCourse from "../../../image/main/title.svg"
 import imgCourse2 from "../../../image/main/girlFront.svg"
 import imgCourse3 from "../../../image/main/dizain.svg"
 import imgCourse4 from "../../../image/main/backend.svg"
 import imgCourse5 from "./../../../image/about-us/peeps-avatar.svg"
+import '../../../style/main/Courses.scss'
 
 const Courses = () => {
     return (
@@ -52,7 +53,6 @@ const Courses = () => {
                 </div>
 
                 <div className="course--projects">
-
                     <div>
                         <div className="course--block">
                             <img src={imgCourse2} className="course--girl" alt=""/>
@@ -73,12 +73,12 @@ const Courses = () => {
                                 <button className="course--btn5">+Английский</button>
                                 <button className="course--btn5">7 месяцев</button>
                             </div>
-                            <button className="course--btn6">Подробнее</button>
+                            <button className="course--btn">Подробнее</button>
                             <button className="course--btn6">Оставить заявку</button>
                         </div>
                     </div>
                     <div>
-                        <div className="course--block">
+                        <div className="course--block2">
                             <img src={imgCourse3} className="course--design" alt=""/>
                         </div>
                         <div className="course--box">
@@ -95,13 +95,12 @@ const Courses = () => {
                                 <button className="course--btn5">3 месяцев</button>
                             </div>
                             <div className="course--but1">
-                                <button className="course--btn6">Подробнее</button>
+                                <button className="course--btn">Подробнее</button>
                                 <button className="course--btn6">Оставить заявку</button>
                             </div>
 
                         </div>
                     </div>
-
                     <div>
                         <div className="course--block">
                             <img src={imgCourse4} className="course--design" alt=""/>
@@ -123,7 +122,7 @@ const Courses = () => {
                                 <button className="course--btn5">3 месяцев</button>
                             </div>
                             <div className="course--but">
-                                <button className="course--btn6">Подробнее</button>
+                                <button className="course--btn">Подробнее</button>
                                 <button className="course--btn6">Оставить заявку</button>
                             </div>
 
@@ -145,7 +144,8 @@ const Courses = () => {
                                 className="course2--desc1">Прочуствуй дружную атмосферу нашей <br/>
                                 академии! Оставь заявку на пробный <br/> урок и стань ближе к своей цели!</p></div>
                             <div className="course2--left"><h1 className="course2--title2">18 февраля <br/> <span
-                                className="course2--desc2">в</span> 18:00 <span className="course2--desc2">мастер класс <br/>  по </span> FRONTEND
+                                className="course2--desc2">в</span> 18:00 <span
+                                className="course2--desc2">мастер класс <br/>  по </span> FRONTEND
                             </h1>
                                 <button className="course2--btn2">Записаться</button>
                             </div>
