@@ -20,13 +20,10 @@ const FAQ = () => {
                               <div  onClick={() => {
                         setSelected(!selected)
                         setSelecte6(false)
-
                         setSelected2(false)
                         setSelected3(false)
-
                         setSelected4(false)}} style={{height:selected ? "150px" : "",transition:"1s"}}  className="faq--acor__card">
                         <div className="faq--acor__card--acc">
-
                                  <h1>Нужны ли начальные знания для учёбы?</h1>
                              <p>Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur at consequatur eum molestiae necessitatibus nulla officia reprehenderit, vero voluptatem. Animi hic libero omnis. Dolorum explicabo nesciunt quasi reiciendis rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, repellat? ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, suscipit.</p>
                         </div>
