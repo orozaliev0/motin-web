@@ -1,0 +1,73 @@
+
+#faq{
+  background: rgb(227, 223, 216);
+  padding: 120px 0;
+  .faq{
+    display: flex;
+    align-items: flex-start;
+    justify-content:space-around ;
+    h1{
+      font-family: 'Muller',sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 36px;
+      display: flex;
+      align-items: center;
+
+      /* красный */
+
+      color: #EC3025;
+    }
+
+    &--acor{
+
+      &__card{
+        margin: 10px 0;
+        display: flex;
+        align-items: flex-start;
+         justify-content: space-between;
+         flex-wrap: wrap;
+        width: 800px;
+        background: #FFFFFF;
+        border-radius: 30px;
+        height: 40px;
+        transition: 3s;
+        //    width: 732px;
+            overflow: hidden;
+          &:hover{
+            transform: scale(1.02);
+          }
+        &--acc{
+          &__rotate{
+            color: white;
+            transform: rotate(90deg);
+             transition: 1s;
+          }
+          h1{
+            padding: 10px 0;
+            margin-left: 2rem;
+            font-family: 'SF Pro Display',sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 19px;
+            line-height: 130%;
+            color: #000000;
+            margin-bottom: 10px;
+
+          }
+          p{
+            margin-left: 2rem;
+            font-size: 17px;
+            color: black;
+          }
+        }
+      }
+
+    }
+
+  }
+}
+
+
+

@@ -28,45 +28,48 @@ const Slick = () => {
                 <div className="slick">
                     <h1>Отзывы студентов</h1>
 
-                    <div className="slick--card">
 
-                        <Slider {...settings}>
+                    <div>
+                        <div className="slick--card">
 
-                            <div>
-                               <div className="slick--card__play">
-                                    <div className="slick--card__play--burch">
-                                        <img src={play} alt="img"/>
+                            <Slider {...settings}>
+
+                                <div>
+                                    <div className="slick--card__play">
+                                        <div className="slick--card__play--burch">
+                                            <img src={play} alt="img"/>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div>
+                                <div>
 
 
-                                <div className="slick--card__play">
-                                    <div className="slick--card__play--burch">
-                                        <img src={play} alt="img"/>
+                                    <div className="slick--card__play">
+                                        <div className="slick--card__play--burch">
+                                            <img src={play} alt="img"/>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div>
-                                <div className="slick--card__play">
-                                    <div className="slick--card__play--burch">
-                                        <img src={play} alt="img"/>
+                                <div>
+                                    <div className="slick--card__play">
+                                        <div className="slick--card__play--burch">
+                                            <img src={play} alt="img"/>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div>
-                                <div className="slick--card__play">
-                                    <div className="slick--card__play--burch">
-                                        <img src={play} alt="img"/>
+                                <div>
+                                    <div className="slick--card__play">
+                                        <div className="slick--card__play--burch">
+                                            <img src={play} alt="img"/>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                        </Slider>
+                            </Slider>
+
+                        </div>
 
                     </div>
-
 
                 </div>
             </div>
@@ -75,4 +78,4 @@ const Slick = () => {
     );
 };
 
-export default Slick;
+export default Slick;
