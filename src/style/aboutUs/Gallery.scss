@@ -38,6 +38,7 @@
       padding-left: 40px;
       cursor: pointer;
     }
+
     &--boxes{
       background: linear-gradient(289.3deg, #131313 17.11%, rgba(23, 23, 23, 0.943269) 53.28%, rgba(28, 28, 28, 0.87) 100%);
       padding: 100px;
@@ -47,11 +48,17 @@
       align-items: center;
     }
     &--images{
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-column-gap: 6px;
-      grid-row-gap: 8px;
+     display: flex;
+      overflow: scroll;
+
+    }
+    &--images img{
+      padding: 0 10px;
+    }
+    &--pagination{
+      padding: 10px 20px;
+      border-radius: 10px;
+
     }
   }
 }
