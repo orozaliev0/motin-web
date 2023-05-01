@@ -73,12 +73,12 @@ const Courses = () => {
                                 <button className="course--btn5">+Английский</button>
                                 <button className="course--btn5">7 месяцев</button>
                             </div>
-                            <button className="course--btn6">Подробнее</button>
+                            <button className="course--btn">Подробнее</button>
                             <button className="course--btn6">Оставить заявку</button>
                         </div>
                     </div>
                     <div>
-                        <div className="course--block">
+                        <div className="course--block2">
                             <img src={imgCourse3} className="course--design" alt=""/>
                         </div>
                         <div className="course--box">
@@ -95,7 +95,7 @@ const Courses = () => {
                                 <button className="course--btn5">3 месяцев</button>
                             </div>
                             <div className="course--but1">
-                                <button className="course--btn6">Подробнее</button>
+                                <button className="course--btn">Подробнее</button>
                                 <button className="course--btn6">Оставить заявку</button>
                             </div>
 
@@ -123,7 +123,7 @@ const Courses = () => {
                                 <button className="course--btn5">3 месяцев</button>
                             </div>
                             <div className="course--but">
-                                <button className="course--btn6">Подробнее</button>
+                                <button className="course--btn">Подробнее</button>
                                 <button className="course--btn6">Оставить заявку</button>
                             </div>
 

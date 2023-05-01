@@ -3,7 +3,7 @@ import '../../../style/it-club/Hero.scss'
 const Hero = () => {
     return (
         <div>
-            
+
         </div>
     );
 };

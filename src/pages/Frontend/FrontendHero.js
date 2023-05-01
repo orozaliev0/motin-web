@@ -1,34 +1,31 @@
 import React from 'react';
-import '../../../style/aboutUs/Hero.scss'
-import an1 from "../../../image/main/an1.png";
-import an4 from "../../../image/main/an4.png";
-import an6 from "../../../image/main/an5.png";
-import an7 from "../../../image/main/an7.png";
-import an3 from "../../../image/main/an3.png";
-import an2 from "../../../image/main/an2.png";
-import an11 from "../../../image/main/an11.png";
-import an13 from "../../../image/main/an13.png";
-import an8 from "../../../image/main/an8.png";
-import an10 from "../../../image/main/an10.png";
-import an9 from "../../../image/main/an9.png";
-import an1media from "../../../image/main/an1media.png";
-import an3media from "../../../image/main/an3media.png";
-import an4media from "../../../image/main/an4media.png";
-import an5media from "../../../image/main/an5media.png";
+import '../../style/pages/FrontendHero.scss'
+import an1 from "../../image/main/an1.png";
+import an4 from "../../image/main/an4.png";
+import an6 from "../../image/main/an5.png";
+import an3 from "../../image/main/an3.png";
+import an2 from "../../image/main/an2.png";
+import an11 from "../../image/main/an11.png";
+import an8 from "../../image/main/an8.png";
+import an7 from "../../image/main/an7.png";
+import an10 from "../../image/main/an10.png";
+import an13 from "../../image/main/an13.png";
+import an1media from "../../image/main/an1media.png";
+import an3media from "../../image/main/an3media.png";
+import an4media from "../../image/main/an4media.png";
+import an5media from "../../image/main/an5media.png";
+import an9 from "../../image/main/an9.png";
 
-const Hero = () => {
+const FrontendHero = () => {
+
     return (
-        <div id="mainPart">
+        <div id="FrontendHero">
             <div className='title'>
-                <h1 style={{
-                    lineHeight: '140px',
-                    paddingTop: '190px'
-                }}>Кто мы- <br/> <span style={{
-                    color: '#EC3025',
-                }}>Motion Web</span>?</h1>
-                <p>Motion Web IT academy — это международный образовательный <br/> проект, который готовит специалистов-практиков IT сферы.</p>
+                <h1>FRONT <span>END</span></h1>
+                <p>UX/UI-дизайн — это процесс создания интерактивных, <br/>удобных интерфейсов. Отличный вариант профессии <br/>для творческих людей, которым нравится решать <br/>проблемы пользователей и создавать что-то новое, <br/>сочетая логику и эстетику.</p>
+                <button>Оставить заявку</button>
             </div>
-            <div className="mainPart">
+            <div className="FrontendHero">
                 <div className="an1">
                     <img src={an1} alt=""/>
                 </div>
@@ -96,4 +93,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export default FrontendHero;
