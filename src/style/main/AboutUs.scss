@@ -2,6 +2,7 @@
   .about{
     &--block{
       display: flex;
+      justify-content: space-evenly;
     }
     &--title{
       font-family: 'Muller',sans-serif;
@@ -18,7 +19,6 @@
       font-size: 19px;
       line-height: 140%;
       color: #1B1B1B;
-      padding-left: 20rem;
       padding-bottom: 24px;
     }
     &--title3{
@@ -28,7 +28,6 @@
       font-size: 20px;
       line-height: 24px;
       color: #EC3025;
-      padding-left: 20rem;
       padding-bottom: 40px;
       cursor: pointer;
     }
@@ -68,4 +67,81 @@
       color: #1B1B1B;
     }
   }
+}
+
+@media (max-width: 1200px) {
+
+  #about .about--box {
+    width: 966px;
+  }
+}
+@media (max-width: 1040px) {
+
+  #about .about--box {
+    margin: 49px 0 100px 11px;
+  }
+}
+@media (max-width: 912px) {
+  #about .about--block {
+    display: flex;
+    justify-content: space-between;
+  }
+  #about .about--box {
+    width: 880px;
+    margin: 50px 0 100px -43px;
+  }
+}
+@media (max-width: 768px) {
+  #about .about--block {
+    display: flex;
+    flex-direction: column;
+  }
+  #about .about--title {
+    padding-bottom: 40px;
+  }
+  #about .about--box {
+    width: 700px;
+    margin: 50px 0 100px -10px;
+    height: 318px;
+    border-radius: 123px;
+  }
+  #about .about--numbers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+  }
+}
+@media (max-width: 540px) {
+  #about .about--number1 {
+    font-weight: 200;
+    font-size: 54px;
+  }
+  #about .about--box {
+    width: 530px;
+  }
+}
+
+@media (max-width: 400px) {
+  #about .about--box {
+    width: 380px;
+  }
+  #about .about--numbers {
+    display: grid;
+    grid-column-gap: -21px;
+    grid-row-gap: 16px;
+  }
+  #about .about--number1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1040px) {
+
+}
+@media (max-width: 1040px) {
+
+}
+@media (max-width: 1040px) {
+
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-// import '../../../style/main/Courses.scss'
 import icon5 from "../../../image/main/Dawn.svg"
 import imgCourse from "../../../image/main/title.svg"
 import imgCourse2 from "../../../image/main/girlFront.svg"
@@ -53,7 +52,7 @@ const Courses = () => {
                 </div>
 
                 <div className="course--projects">
-                    <div>
+                    <div className="course--block1">
                         <div className="course--block">
                             <img src={imgCourse2} className="course--girl" alt=""/>
                         </div>
