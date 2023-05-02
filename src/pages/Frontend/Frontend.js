@@ -15,6 +15,7 @@ import img4 from '../../image/frontEnd/img4.png'
 import img5 from '../../image/frontEnd/img5.png'
 import {MdKeyboardArrowDown} from 'react-icons/md'
 import Last from "../../components/main-page/Last/Last";
+import page from "./page";
 
 const Frontend = () => {
 
@@ -275,15 +276,17 @@ const Frontend = () => {
                                 setSelected3(false)
                                 setSelected4(false)
                                 setSelected5(false)
-                             }} style={{height: selected ? '635px' : '', transition: '1s'}}>
+                             }} style={{height: selected ? '635px' : '', transition: '1s',}}>
                                 <div className="accord--leftBlock">
                                     <img src={img1} alt=""/>
                                     <h2>Основы UX дизайна</h2>
                                 </div>
+
                                 <div className="accord--rightBlock">
                                     <MdKeyboardArrowDown style={{transform: selected ? "rotate(180deg)" : ""}}/>
                                 </div>
                             </div>
+
                             <div className="accord" onClick={() =>{
                                 setSelected2(!selected2)
                                 setSelected(false)
