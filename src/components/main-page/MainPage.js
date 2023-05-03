@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Hero from "./Hero/Hero";
 import AboutUS from "./AboutUs/AboutUS";
 import Courses from "./Courses/Courses";
@@ -8,8 +8,16 @@ import Last from "./Last/Last";
 import FAQ from "./FAQ/FAQ";
 
 import Motion from "./Motion/Motion";
+import SingForm from "../../modalPage/SingForm";
 
 const MainPage = () => {
+
+    const [last, setLast] = useState(false)
+
+    const lastForm = () => {
+        setLast(true)
+    }
+
 
     return (
         <div>
@@ -20,7 +28,7 @@ const MainPage = () => {
             <Project/>
             <Slick/>
             <FAQ/>
-            <Last/>
+            {!last ? <Last lastForm={lastForm}/> : <SingForm/>}
         </div>
     );
 };
