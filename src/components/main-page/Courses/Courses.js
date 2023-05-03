@@ -6,51 +6,50 @@ import imgCourse3 from "../../../image/main/dizain.svg"
 import imgCourse4 from "../../../image/main/backend.svg"
 import imgCourse5 from "./../../../image/about-us/peeps-avatar.svg"
 import '../../../style/main/Courses.scss'
+import Slider from "react-slick";
+
 
 const Courses = () => {
+
     return (
         <section id="course">
             <div className="course">
-                <div className="course--anim">
-                    <marquee behavior="initial" scrollamount="25">
-                        <div className="course--name">
-                            <h1 className="course--title">КУРСЫ</h1>
-                            <div className="course--vector"></div>
-                            <img src={imgCourse} className="course--title2" alt=""/>
-                            <div className="course--vector"></div>
-                            <h1 className="course--title">КУРСЫ</h1>
-                            <div className="course--vector"></div>
-                            <img src={imgCourse} className="course--title2" alt=""/>
-                            <div className="course--vector"></div>
-                            <h1 className="course--title">КУРСЫ</h1>
-                            <div className="course--vector"></div>
-                            <img src={imgCourse} className="course--title2" alt=""/>
-                            <div className="course--vector"></div>
-                            <h1 className="course--title">КУРСЫ</h1>
-                            <div className="course--vector"></div>
-                            <img src={imgCourse} className="course--title2" alt=""/>
+                <section>
+                    <div className="scroll text1" style={{background: "#EC3025"}}>
+                        <div>
+                            курсы <span>курсы - </span> курсы <span>курсы - </span> курсы{" "}
+                            <span>курсы - </span> курсы <span>курсы - </span>
+                            курсы <span>курсы - </span> курсы <span>курсы - </span> курсы{" "}
+                            <span>курсы - </span> курсы <span>курсы - </span>
                         </div>
-                    </marquee>
-                </div>
-                <div className="course--name2">
-                    <marquee behavior="initial" scrollamount="25">
-                        <div className="course--name">
-                            <h1 className="course--title">FRONTEND</h1>
-                            <h1 className="course--title">BACKEND</h1>
-                            <h1 className="course--title">UX UI</h1>
-                            <img src={icon5} alt=""/>
-                            <h1 className="course--title">FRONTEND</h1>
-                            <h1 className="course--title">BACKEND</h1>
-                            <h1 className="course--title">UX UI</h1>
-                            <img src={icon5} alt=""/>
-                            <h1 className="course--title">FRONTEND</h1>
-                            <h1 className="course--title">BACKEND</h1>
-                            <h1 className="course--title">UX UI</h1>
-                            <img src={icon5} className="course--title2" alt=""/>
+                        <div>
+                            курсы <span>курсы - </span> курсы <span>курсы - </span> курсы{" "}
+                            <span>курсы - </span> курсы <span>курсы - </span>
+                            курсы <span>курсы
+урсы - </span> курсы <span>курсы - </span> курсы{" "} <span>курсы - </span> курсы <span>курсы - </span>
                         </div>
-                    </marquee>
-                </div>
-
+                    </div>
+                    <div className="scroll2 text2"
+                         style={{background: "#4886FF", transform: "rotate(-3deg)"}}>
+                        <div>
+                            FRONTEND <span>BACKEND </span> UX UI <span>FRONTEND </span>{" "}
+                            BACKEND{" "} <span>
+                -UX UI <img className="course--icon" src={icon5} alt=""/>{" "}              </span>{" "}
+                            FRONTEND <span>BACKEND </span> FRONTEND <span>BACKEND </span> UX
+                            UI <span>FRONTEND </span>{" "}
+                            BACKEND{" "} <span>
+                -UX UI <img className="course--icon" src={icon5} alt=""/>{" "}              </span>{" "}
+                            FRONTEND <span>BACKEND </span></div>
+                        <div> FRONTEND <span>BACKEND </span>
+                            UX UI <span>FRONTEND </span> BACKEND{" "}
+                            <span>                UX UI <img className="course--icon" src={icon5} alt=""/>{" "}
+              </span>{" "} FRONTEND <span>BACKEND </span>
+                            FRONTEND <span>BACKEND </span> UX UI <span>FRONTEND </span>{" "} BACKEND{" "}
+                            <span>                UX UI <img className="course--icon" src={icon5} alt=""/>{" "}
+              </span>{" "} FRONTEND <span>BACKEND </span>
+                        </div>
+                    </div>
+                </section>
                 <div className="course--projects">
                     <div className="course--block1">
                         <div className="course--block">
