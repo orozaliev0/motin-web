@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import icon5 from "../../../image/main/Dawn.svg"
 import imgCourse from "../../../image/main/title.svg"
 import imgCourse2 from "../../../image/main/girlFront.svg"
@@ -6,8 +6,22 @@ import imgCourse3 from "../../../image/main/dizain.svg"
 import imgCourse4 from "../../../image/main/backend.svg"
 import imgCourse5 from "./../../../image/about-us/peeps-avatar.svg"
 import '../../../style/main/Courses.scss'
+import Modal from "../../../modalPage/Modal";
+import modal from "../../../image/main/smiling-face 2.svg";
 
 const Courses = () => {
+
+    const [submitted, setSubmitted] = useState(false)
+    const submitForm = () => {
+        setSubmitted(true)
+    }
+
+
+    const [start, setStart] = useState(true)
+    const startForm = () => {
+        setStart(true)
+    }
+
     return (
         <section id="course">
             <div className="course">
@@ -73,7 +87,7 @@ const Courses = () => {
                                 <button className="course--btn5">7 месяцев</button>
                             </div>
                             <button className="course--btn">Подробнее</button>
-                            <button className="course--btn6">Оставить заявку</button>
+                            <button className="course--btn6" onClick={() => setStart(!start)}>Оставить заявку</button>
                         </div>
                     </div>
                     <div>
@@ -95,7 +109,7 @@ const Courses = () => {
                             </div>
                             <div className="course--but1">
                                 <button className="course--btn">Подробнее</button>
-                                <button className="course--btn6">Оставить заявку</button>
+                                <button className="course--btn6" onClick={() => setStart(!start)}>Оставить заявку</button>
                             </div>
 
                         </div>
@@ -122,7 +136,7 @@ const Courses = () => {
                             </div>
                             <div className="course--but">
                                 <button className="course--btn">Подробнее</button>
-                                <button className="course--btn6">Оставить заявку</button>
+                                <button className="course--btn6" onClick={() => setStart(!start)}>Оставить заявку</button>
                             </div>
 
                         </div>
@@ -146,12 +160,17 @@ const Courses = () => {
                                 className="course2--desc2">в</span> 18:00 <span
                                 className="course2--desc2">мастер класс <br/>  по </span> FRONTEND
                             </h1>
-                                <button className="course2--btn2">Записаться</button>
+                                <button className="course2--btn2" onClick={() => setStart(!start)}>Записаться</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div className={start ? "modal" : "modal active"} onClick={() => setStart(true)}>
+                {!submitted ? <Modal submitForm={submitForm} startForm={startForm}/> : <img src={modal} alt=""/>}
+            </div>
+
         </section>
     );
 };
