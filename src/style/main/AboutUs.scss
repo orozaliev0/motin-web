@@ -103,6 +103,9 @@
       }
       &--box{
 
+@media (max-width: 1200px) {
+  #about .about--box {
+    width: 966px;
       }
       &--number1{
 
