@@ -1,5 +1,4 @@
-import React from 'react';
-// import '../../../style/main/Hero.scss'
+import React, {useState} from 'react';
 import '../../../style/main/Hero.scss'
 import an1 from "../../../image/main/an1.png";
 import an4 from "../../../image/main/an4.png";
@@ -16,17 +15,35 @@ import an3media from "../../../image/main/an3media.png";
 import an4media from "../../../image/main/an4media.png";
 import an5media from "../../../image/main/an5media.png";
 import an9 from "../../../image/main/an9.png";
+import Modal from "../../../modalPage/Modal";
+import modal from "../../../image/main/smiling-face 2.svg"
+
 
 const Hero = () => {
 
+    const [submitted, setSubmitted] = useState(false)
+    const submitForm = () => {
+        setSubmitted(true)
+    }
+
+
+    const [start, setStart] = useState(true)
+    const startForm = () => {
+        setStart(true)
+    }
+
     return (
         <div id="mainPart">
+
+
             <div className='title'>
                 <h1>MOTION WEB</h1>
                 <h2><span>IT</span> ACADEMY</h2>
                 <p>Лицензированная IT академия в Бишкеке</p>
-                <button>Оставить заявку</button>
+                <button onClick={() => setStart(!start)}>Оставить заявку</button>
             </div>
+
+
             <div className="mainPart">
                 <div className="an1">
                     <img src={an1} alt=""/>
@@ -91,6 +108,11 @@ const Hero = () => {
                 <div className="backdropBlur"></div>
 
             </div>
+
+            <div className={start ? "modal" : "modal active"} onClick={() => setStart(true)}>
+                {!submitted ? <Modal submitForm={submitForm} startForm={startForm}/> : <img src={modal} alt=""/>}
+            </div>
+
         </div>
     );
 };

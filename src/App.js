@@ -10,7 +10,7 @@ import MainFr from "./pages/Frontend/MainFr";
 
 function App() {
   return (
-    <div className="App">
+    <div    className="App">
 
       <Routes>
         <Route path='/' element={<MainPage/>}/>

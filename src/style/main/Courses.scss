@@ -118,6 +118,14 @@
       img {
         padding: 20px 0;
       }
+  &--anim {
+    width: 99.9%;
+    height: 73px;
+    background: #EC3025;
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+  }
 
       span {
         padding: 0 50px;
@@ -168,6 +176,16 @@
       animation-delay: -40s;
       display: flex;
     }
+  &--name2 {
+    background: #4886FF;
+    transform: rotate(-2deg);
+    width: 99.9%;
+    height: 73px;
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+    margin-bottom: 10rem;
+  }
 
     section .scroll2 div:nth-child(2) {
       animation: animate2 40s linear infinite;

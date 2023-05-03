@@ -606,10 +606,11 @@
         height: 75px;
         background: white;
         border-radius: 25px;
-        margin: 10px 0;
+        margin: 10px 0 0 0;
         &--leftBlock {
           display: flex;
           align-items: center;
+          top: 0;
           img {
             margin: 0 14px 0 24px;
           }

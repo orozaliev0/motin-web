@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import '../../../style/main/FAQ.scss'
 import '../../../style/main/media/mediaFAQ.scss'
-import {MdArrowBackIosNew} from "react-icons/md";
+import {MdArrowBackIos, MdArrowBackIosNew} from "react-icons/md";
 
 const FAQ = () => {
     const [selected, setSelected] = useState(false)
@@ -27,8 +27,8 @@ const FAQ = () => {
                                  <h1>Нужны ли начальные знания для учёбы?</h1>
                              <p>Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur at consequatur eum molestiae necessitatibus nulla officia reprehenderit, vero voluptatem. Animi hic libero omnis. Dolorum explicabo nesciunt quasi reiciendis rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, repellat? ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, suscipit.</p>
                         </div>
-                        <MdArrowBackIosNew className="faq--acor__card--acc__rotate" style={{ transform: selected ? "rotate(270deg)" : "rotate(90deg)",
-                            fontSize:"60px", marginRight:"20px", marginTop:"-10px", color:"wheat"}}/>
+                        <MdArrowBackIosNew className="faq--acor__card--acc__rotate" style={{ color:"black", transform: selected ? "rotate(270deg)" : "rotate(90deg)",
+                            fontSize:"60px", marginRight:"20px", marginTop:"-10px", }}/>
                     </div>
                     <div  onClick={() => {
                         setSelected2(!selected2)
@@ -60,14 +60,13 @@ const FAQ = () => {
                         setSelected4(!selected4)
                         setSelected2(false)
                         setSelecte6(false)
-
                         setSelected3(false)
                         setSelected5(false)}} style={{height:selected4 ? "150px" : "",transition:"1s"}}  className="faq--acor__card">
                         <div className="faq--acor__card--acc">
                                  <h1>Мне помогут трудоустроится?</h1>
                              <p>Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur at consequatur eum molestiae necessitatibus nulla officia reprehenderit, vero voluptatem. Animi hic libero omnis. Dolorum explicabo nesciunt quasi reiciendis rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, repellat? ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, suscipit.</p>
                         </div>
-                        <MdArrowBackIosNew className="faq--acor__card--acc__rotate" style={{ transform: selected4 ? "rotate(270deg)" : "rotate(90deg)",
+                        <MdArrowBackIos className="faq--acor__card--acc__rotate" style={{ transform: selected4 ? "rotate(270deg)" : "rotate(90deg)",
                             fontSize:"60px", marginRight:"20px", marginTop:"-10px", color:"wheat"}}/>
                     </div>
 
@@ -82,8 +81,6 @@ const FAQ = () => {
                                  <h1>Кто мне поможет, если возникнут вопросы?</h1>
                              <p>Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur at consequatur eum molestiae necessitatibus nulla officia reprehenderit, vero voluptatem. Animi hic libero omnis. Dolorum explicabo nesciunt quasi reiciendis rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, repellat? ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, suscipit.</p>
                         </div>
-                        <MdArrowBackIosNew className="faq--acor__card--acc__rotate" style={{ transform: selected5 ? "rotate(270deg)" : "rotate(90deg)",
-                            fontSize:"60px", marginRight:"20px", marginTop:"-10px", color:"wheat"}}/>
                     </div>
                              <div  onClick={() => {
                                  setSelecte6(!selected6)
