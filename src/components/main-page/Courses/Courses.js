@@ -44,15 +44,15 @@ const Courses = () => {
                         </div>
                     </div>
                     <div className="scroll2 text2"
-                         style={{background: "#4886FF", transform: "rotate(-3deg)"}}>
+                         style={{background: "#4886FF", transform: "rotate(-2deg)"}}>
                         <div>
                             FRONTEND <span>BACKEND </span> UX UI <span>FRONTEND </span>{" "}
                             BACKEND{" "} <span>
-                -UX UI <img className="course--icon" src={icon5} alt=""/>{" "}              </span>{" "}
+                UX UI <img className="course--icon" src={icon5} alt=""/>{" "}              </span>{" "}
                             FRONTEND <span>BACKEND </span> FRONTEND <span>BACKEND </span> UX
                             UI <span>FRONTEND </span>{" "}
                             BACKEND{" "} <span>
-                -UX UI <img className="course--icon" src={icon5} alt=""/>{" "}              </span>{" "}
+                UX UI <img className="course--icon" src={icon5} alt=""/>{" "}              </span>{" "}
                             FRONTEND <span>BACKEND </span></div>
                         <div> FRONTEND <span>BACKEND </span>
                             UX UI <span>FRONTEND </span> BACKEND{" "}
