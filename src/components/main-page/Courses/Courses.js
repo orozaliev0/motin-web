@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import icon5 from "../../../image/main/Dawn.svg"
-import imgCourse from "../../../image/main/title.svg"
 import imgCourse2 from "../../../image/main/girlFront.svg"
 import imgCourse3 from "../../../image/main/dizain.svg"
 import imgCourse4 from "../../../image/main/backend.svg"
@@ -9,9 +8,8 @@ import '../../../style/main/Courses.scss'
 import Slider from "react-slick";
 import Modal from "../../../modalPage/Modal";
 import modal from "../../../image/main/smiling-face 2.svg";
-
-
-
+import Modal from "../../../modalPage/Modal";
+import modal from "../../../image/main/smiling-face 2.svg";
 
 const Courses = () => {
 
@@ -109,7 +107,8 @@ const Courses = () => {
                             </div>
                             <div className="course--but1">
                                 <button className="course--btn">Подробнее</button>
-                                <button className="course--btn6" onClick={() => setStart(!start)}>Оставить заявку</button>
+                                <button className="course--btn6" onClick={() => setStart(!start)}>Оставить заявку
+                                </button>
                             </div>
 
                         </div>
@@ -136,7 +135,8 @@ const Courses = () => {
                             </div>
                             <div className="course--but">
                                 <button className="course--btn">Подробнее</button>
-                                <button className="course--btn6" onClick={() => setStart(!start)}>Оставить заявку</button>
+                                <button className="course--btn6" onClick={() => setStart(!start)}>Оставить заявку
+                                </button>
                             </div>
 
                         </div>
