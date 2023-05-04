@@ -67,7 +67,8 @@ const Motion = () => {
                                         научатся презентовать свои работы и поймут какие проблемы
                                         бывают на стадии разработки
                                     </p>
-                                    <Link onClick={() => window.scroll(0,0)} to={"/it_club"}>
+                                    <Link onClick={() => window.scroll(0,0)}
+                                          to={"/it_club"}>
                                         <span>Подробнее</span>
                                     </Link>
                                 </div>
