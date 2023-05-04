@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
 import '../../../style/main/AboutUs.scss'
+import {useNavigate} from "react-router-dom";
 
 
 const AboutUS = () => {
+    const navigate = useNavigate()
     const [cost, setCost] = useState(false)
     const onCost = () => {
         setCost(!cost)
@@ -25,9 +27,8 @@ const AboutUS = () => {
                                 <span style={{display: cost ? "block" : "none"}}>Благодаря нашему постоянному развитию мы разработали эффективные программы для подготовки IT-специалистов. Нам удалось соединить лучшие практики офлайн — и онлайн-образования </span>
                             </h2>
 
+                            <p onClick={() => navigate(`/about_us`) || window.scroll(0,0)}>Подробнее</p>
 
-                            <p onClick={onCost}><span style={{display: cost ? "none" : "block"}}>Подробнее</span> <span
-                                style={{display: cost ? "block" : "none",}}>Назать</span></p>
 
 
                         </div>
