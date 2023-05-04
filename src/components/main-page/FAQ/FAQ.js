@@ -47,7 +47,6 @@ const FAQ = () => {
                         setSelected2(false)
                         setSelected(false)
                         setSelecte6(false)
-
                         setSelected4(false)}} style={{height:selected3 ? "150px" : "",transition:"1s"}}  className="faq--acor__card">
                         <div className="faq--acor__card--acc">
                                  <h1>Какой график обучения? Получится ли совмещать его с работо?</h1>

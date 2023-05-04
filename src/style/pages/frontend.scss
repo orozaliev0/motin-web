@@ -607,10 +607,24 @@
         background: white;
         border-radius: 25px;
         margin: 10px 0 0 0;
+        &--block{
+          h1{
+            position: relative;
+            top: 50px ;
+            left: -12px;
+            width: 592px;
+            color: rgba(27, 27, 27, 0.8)
+          }
+          li{
+            top: 70px;
+            left: 0;
+            position: relative;
+            list-style: disc;
+          }
+        }
         &--leftBlock {
           display: flex;
           align-items: center;
-          top: 0;
           img {
             margin: 0 14px 0 24px;
           }

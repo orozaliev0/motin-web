@@ -1,0 +1,82 @@
+#club {
+  .club {
+    &--it {
+      display: flex;
+      align-items: start;
+
+      h4 {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 40px;
+        color: #020202;
+        width: 210px;
+        span {
+          color: #ec3025;
+        }
+      }
+      p {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 130%;
+        color: rgba(27, 27, 27, 0.8);
+        width: 635px;
+        margin-left: 200px;
+      }
+    }
+    &--talking {
+      border: 2px solid #ec3025;
+      border-radius: 125px;
+      width: 1220px;
+      height: 169px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 0 auto;
+      margin: 100px 0;
+      &__months {
+        text-align: center;
+        h3 {
+          font-weight: 500;
+          font-size: 64px;
+          line-height: 64px;
+          color: #ec3025;
+          margin-bottom: 5px;
+        }
+        span {
+          font-weight: 400;
+          font-size: 24px;
+          color: #000000;
+        }
+      }
+      &__week {
+        text-align: center;
+        h3 {
+          font-weight: 500;
+          font-size: 64px;
+          line-height: 64px;
+          color: #ec3025;
+          margin-bottom: 5px;
+        }
+        span {
+          font-weight: 400;
+          font-size: 24px;
+          color: #000000;
+        }
+      }
+      &__proj {
+        text-align: center;
+        h3 {
+          font-weight: 500;
+          font-size: 64px;
+          line-height: 64px;
+          color: #ec3025;
+        }
+        span {
+          font-weight: 400;
+          font-size: 24px;
+          color: #000000;
+        }
+      }
+    }
+  }
+}

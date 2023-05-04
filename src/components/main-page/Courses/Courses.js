@@ -5,6 +5,9 @@ import imgCourse3 from "../../../image/main/dizain.svg"
 import imgCourse4 from "../../../image/main/backend.svg"
 import imgCourse5 from "./../../../image/about-us/peeps-avatar.svg"
 import '../../../style/main/Courses.scss'
+import Slider from "react-slick";
+import Modal from "../../../modalPage/Modal";
+import modal from "../../../image/main/smiling-face 2.svg";
 import Modal from "../../../modalPage/Modal";
 import modal from "../../../image/main/smiling-face 2.svg";
 
