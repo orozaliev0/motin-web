@@ -25,7 +25,7 @@ const Header = () => {
                         <NavLink to={"/about_us"}>O нас</NavLink>
                         <a onMouseOver={() => setCourses(true)}> {courses ? <Courses/> : ''}O курсах</a>
                         <NavLink to={"/it_club"}>Клуб</NavLink>
-                        <NavLink to={"contact"}>Контакты</NavLink>
+                        <NavLink onClick={() => window.scroll(0,7000)} to={""}>Контакты</NavLink>
                     </div>
                     <div className="header__language">
                         <img src={language} alt=""/>
