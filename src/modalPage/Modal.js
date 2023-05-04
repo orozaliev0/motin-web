@@ -7,6 +7,7 @@ import validation from "./validation/Validation";
 const Modal = ({startForm, submitForm}) => {
 
 
+
     const [values, setValues] = useState({
         name: "",
         number: "",
@@ -64,6 +65,7 @@ const Modal = ({startForm, submitForm}) => {
                         value={values.number}
                         placeholder="Номер"/>
                 </div>
+
 
 
                 <div className="modal--content__label">
