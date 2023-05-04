@@ -1,38 +1,44 @@
-import React from "react";
-import "../../../style/main/Project.scss";
-import { Link } from "react-router-dom";
-import Fly from "../../../image/main/fly-falcon.svg";
-import Sound from "../../../image/main/sound.svg";
-import Card from "../../../image/main/card.svg";
-import Pods from "../../../image/main/pods.svg";
-const Project = () => {
-	return (
-		<div id="project">
-			<div className="container">
-				<div className="project">
-					<div className="project--photos">
-						<div className="project--photos__text">
-							<h3>Проекты студентов </h3>
-							<p>MOTIN WEB IT ACADEMY</p>
-						</div>
-						<img src={Fly} alt="" />
-						<img className="project--photos__sound" src={Sound} alt="" />
-					</div>
-					<div className="project--more">
-						<div className="project--more__img">
-							<img src={Card} alt="" />
-							<img className="project--more__img--pods" src={Pods} alt="" />
-						</div>
-						<div className="project--more__link">
-							<Link to={"/"}>
-								<span>Показать ещё</span>
-							</Link>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	);
+import React from 'react';
+import "./../../../style/main/Project.scss"
+import studentImg from "./../../../image/main/project1.svg"
+import studentImg1 from "./../../../image/main/project2.svg"
+import studentImg2 from "./../../../image/main/project3.svg"
+import studentImg3 from "./../../../image/main/project4.svg"
+import studentImg4 from "./../../../image/main/project5.svg"
+import studentImg5 from "./../../../image/main/project6.svg"
+import studentImg6 from "./../../../image/main/project7.svg"
+import {useState} from "react";
+
+const Student = () => {
+    const [student, setStudent] = useState(false)
+    return (
+        <section id="student">
+            <div className="container">
+                <div className="student">
+                    <div className="student--text">
+                        <h3>Проекты студентов</h3>
+                        <h1>MOTIN WEB <br/> IT ACADEMY</h1>
+                    </div>
+                    <img src={studentImg} alt=""/>
+                    <img src={studentImg1} alt=""/>
+                    <img src={studentImg2} alt=""/>
+                    <img src={studentImg3} alt=""/>
+                    {
+                        student ? <img src={studentImg6} alt=""/> : ""
+                    }
+                    {
+                        student ? <img src={studentImg4} alt=""/> : ""
+                    }
+                    {
+                        student ? <img src={studentImg5} alt=""/> : ""
+                    }
+
+                    <p onClick={() => setStudent(!student)}>{student ? "Свернуть" : "Показать ещё"}</p>
+
+                </div>
+            </div>
+        </section>
+    );
 };
 
-export default Project;
+export default Student;
