@@ -8,6 +8,9 @@ import '../../../style/main/Courses.scss'
 import Modal from "../../../modalPage/Modal";
 import modal from "../../../image/main/smiling-face 2.svg";
 
+
+
+
 const Courses = () => {
 
     const [submitted, setSubmitted] = useState(false)
@@ -27,7 +30,7 @@ const Courses = () => {
                 <section>
                     <div className="scroll text1" style={{background: "#EC3025"}}>
                         <div>
-                            курсы <span>курсы - </span> курсы <span>курсы - </span> курсы{" "}
+                            курсы <span>курсы <span className="course--vector"></span> </span> курсы <span>курсы - </span> курсы{" "}
                             <span>курсы - </span> курсы <span>курсы - </span>
                             курсы <span>курсы - </span> курсы <span>курсы - </span> курсы{" "}
                             <span>курсы - </span> курсы <span>курсы - </span>
@@ -36,7 +39,7 @@ const Courses = () => {
                             курсы <span>курсы - </span> курсы <span>курсы - </span> курсы{" "}
                             <span>курсы - </span> курсы <span>курсы - </span>
                             курсы <span>курсы
-урсы - </span> курсы <span>курсы - </span> курсы{" "} <span>курсы - </span> курсы <span>курсы - </span>
+курсы - </span> курсы <span>курсы - </span> курсы{" "} <span>курсы - </span> курсы <span>курсы - </span>
                         </div>
                     </div>
                     <div className="scroll2 text2"
