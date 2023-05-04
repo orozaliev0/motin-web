@@ -19,14 +19,14 @@ const Footer = () => {
                         <NavLink to={'/'} className=""><img className="footer--f--img" src={logo} alt="" /></NavLink>
                         <div className="footer--f--block">
                             <NavLink className="footer--f--block--h1">Курсы</NavLink>
-                            <NavLink to={'frontend'} className="footer--f--block--p">Frontend</NavLink>
-                            <NavLink to={'UxUi'} className="footer--f--block--p">UI/UX design</NavLink>
-                            <NavLink to={'backend'} className="footer--f--block--p">Backend</NavLink>
+                            <NavLink onClick={() => window.scroll(0,0)} to={'/MainFr'} className="footer--f--block--p">Frontend</NavLink>
+                            <NavLink onClick={() => window.scroll(0,0)} to={'/UxUi'} className="footer--f--block--p">UI/UX design</NavLink>
+                            <NavLink onClick={() => window.scroll(0,0)} to={'/backend'} className="footer--f--block--p">Backend</NavLink>
                         </div>
                     </div>
                     <div className="footer--s">
-                        <NavLink to={'AboutUs'} className="footer--s--p">О нас</NavLink>
-                        <NavLink to={'club'} className="footer--s--p">Клуб</NavLink>
+                        <NavLink onClick={() => window.scroll(0,0)} to={'about_us'} className="footer--s--p">О нас</NavLink>
+                        <NavLink onClick={() => window.scroll(0,0)} to={'it_club'} className="footer--s--p">Клуб</NavLink>
                         <NavLink className="footer--s--p">FAQ</NavLink>
                     </div>
                     <div className="footer--t">
