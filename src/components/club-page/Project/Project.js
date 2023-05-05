@@ -25,6 +25,7 @@ const Project = () => {
                         <div className="project--lead">
                             <img className="project--lead__persons" src={persons} alt="" />
                             <div className="project--lead__block">
+
                                 <div className="project--lead__block--txt">
                                     <Link to={"/MainFr"}>
                                         <span>Frontend</span>
@@ -39,13 +40,15 @@ const Project = () => {
 
                                 <img className="project--lead__block__one" src={one} alt="" />
                                 <img className="project--lead__block__nine" src={nine} alt="" />
-
                             </div>
-                       <div>
+                            <div>
+
                            <img className='project--lead__ani1' src={ani1} alt="img"/>
                            <img className='project--lead__ani2' src={ani2} alt="img"/>
                            <img className='project--lead__ani3' src={ani3} alt="img"/>
-                           <img className='project--lead__ani4' src={ani4} alt="img"/>
+                           <img className='project--lead__ani4' src={ani4} alt="img" style={{
+                               zIndex: -45
+                           }}/>
                            <img className='project--lead__ani5' src={ani5} alt="img"/>
                        </div>
 
