@@ -1,81 +1,44 @@
 import React from 'react';
-import '../../../style/main/Slick.scss'
-import play from '../../../image/about-us/play_slick.png'
+import "./../../../style/main/Slick.scss"
 import Slider from "react-slick";
-import direction from '../../../image/about-us/direction.png'
-import direction_left from '../../../image/about-us/direction_left.png'
+import slideImg from "./../../../image/main/видео.svg"
+import SliderIcon2 from "./../../../image/main/check.svg"
+import SliderIcon1 from "./../../../image/main/check1.svg"
 
+const Slide = () => {
 
-// function Slider(props) {
-//     return null;
-// }
-
-
-const Slick = () => {
     const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        nextArrow: <img src={direction}   alt="arrow" />,
-        prevArrow: <img src={direction_left} alt="arrow" />,
+        slidesToShow: 2.5,
+        prevArrow: <img src={SliderIcon2} alt=""/>,
+        nextArrow: <img src={SliderIcon1} alt=""/>,
     };
 
     return (
-        <div id="slick">
-            <div className="container">
-                <div className="slick">
-                    <h1>Отзывы студентов</h1>
-
-
-                    <div>
-                        <div className="slick--card">
-
-                            <Slider {...settings}>
-
-                                <div>
-                                    <div className="slick--card__play">
-                                        <div className="slick--card__play--burch">
-                                            <img src={play} alt="img"/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-
-
-                                    <div className="slick--card__play">
-                                        <div className="slick--card__play--burch">
-                                            <img src={play} alt="img"/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div className="slick--card__play">
-                                        <div className="slick--card__play--burch">
-                                            <img src={play} alt="img"/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div className="slick--card__play">
-                                        <div className="slick--card__play--burch">
-                                            <img src={play} alt="img"/>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </Slider>
-
+        <section id="slide">
+            <div className="slide">
+                <h1>Отзывы студентов</h1>
+                <div className="slide--sliders">
+                    <Slider {...settings}>
+                        <div>
+                            <img src={slideImg} alt=""/>
                         </div>
-
-                    </div>
-
+                        <div>
+                            <img src={slideImg} alt=""/>
+                        </div>
+                        <div>
+                            <img src={slideImg} alt=""/>
+                        </div>
+                        <div>
+                            <img src={slideImg} alt=""/>
+                        </div>
+                        <div>
+                            <img src={slideImg} alt=""/>
+                        </div>
+                    </Slider>
                 </div>
             </div>
-        </div>
-
+        </section>
     );
 };
 
-export default Slick;
+export default Slide;
