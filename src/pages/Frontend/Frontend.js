@@ -23,6 +23,8 @@ const Frontend = () => {
     const [selected3, setSelected3] = useState(false)
     const [selected4, setSelected4] = useState(false)
     const [selected5, setSelected5] = useState(false)
+    const [choose, SetChoose] = useState(false)
+    const [choose2, SetChoose2] = useState(false)
 
     return (
         <div id="frontEnd">
@@ -94,9 +96,22 @@ const Frontend = () => {
                     </div>
 
                     <div className="frontEnd--buttons">
-                        <button>Офлайн</button>
-                        <button>Онлайн</button>
+                        <button style={{transform:"3s"}} onClick={()=>SetChoose(!choose)}>Офлайн</button>
+                        <button onClick={()=>SetChoose2(!choose2)}>Онлайн</button>
+
+                        <div>
+
+                        </div>
                     </div>
+                    <div   className="frontEnd--ofline">
+                        <div style={{display:choose ?  "block": "none",
+                            transition:choose ? "3s" : "0",backdropFilter: 'blur(10px)'}} onClick={()=> SetChoose(!choose)} className='frontEnd--ofline__first'>
+                            <div className="frontEnd--ofline__first--three">
+                                <h1>Офлайн</h1>
+                                <li>В одной группе обучается всего 10-12-14 студентов стандартной формы.</li>
+                                <li>Занятия будут проходить на кыргызском языке.</li>
+                                <li>В Академии есть возможность практиковать внеклассное обучение в период с 09 до 22  (OPEN SPACE).
+                                </li>
 
                 </div>
                 <div className="frontEnd--bottom">
@@ -162,8 +177,24 @@ const Frontend = () => {
                                 </div>
                             </div>
                         </div>
+                        <div style={{display: choose2 ? "block" : "none"}}  onClick={()=>SetChoose2(!choose2)} className='frontEnd--ofline__for'>
+                            <div className="frontEnd--ofline__first--three">
+                                <h1>Онлайн</h1>
+                                <li>В одной группе обучается всего 10-12-14 студентов стандартной формы.</li>
+                                <li>Занятия будут проходить на кыргызском языке.</li>
+                                <li>Телеграм, ZOOm</li>
+                                <li>Быстрая и оперативная обратная связь от менторов</li>
+
+                            </div>
+                        </div>
+
+
+
+
 
                     </div>
+                    <div style={{display: choose ? "block" : "none"}} className="frontEnd--window"></div>
+                    <div style={{display: choose2 ? "block" : "none"}} className="frontEnd--window2"></div>
 
                 </div>
 
@@ -217,7 +248,6 @@ const Frontend = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
 
 
