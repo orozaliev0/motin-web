@@ -1,106 +1,153 @@
-#about {
-  .about {
+#us {
+  padding: 100px;
+  .us {
     &--block {
       display: flex;
-      align-items: flex-start;
-      justify-content: space-around;
+      align-items: start;
+      justify-content: space-between;
 
       h1 {
-        font-family: 'Muller', sans-serif;
-        font-weight: 500;
+        font-style: normal;
+        font-weight: 600;
         font-size: 36px;
         line-height: 36px;
         color: #EC3025;
       }
 
-      &__cont {
-        h3 {
-          font-family: 'SF Pro Display', sans-serif;
-          font-weight: 400;
-          font-size: 19px;
-          line-height: 140%;
-          width: 633px;
-          color: #1B1B1B;
+      &__p {
+        width: 60%;
 
-        }
-
-        h2 {
-          margin: 30px 0 0 0;
-          font-family: 'SF Pro Display', sans-serif;
+        p {
+          padding-bottom: 20px;
           font-style: normal;
           font-weight: 400;
           font-size: 19px;
           line-height: 140%;
-          width: 632px;
           color: #1B1B1B;
-
         }
 
-        p {
-          margin: 14px 0 0 0;
-          font-weight: 500;
+        a {
+          border-bottom: 2px solid #000000;
+          transition: 0.5s all;
+          font-style: normal;
+          font-weight: 600;
           font-size: 20px;
           line-height: 24px;
-          color: #1B1B1B;
-          cursor: pointer;
-          transition: 0.5s all;
-          border-bottom: 2px solid #1B1B1B;
-          width: 17%;
-
+          color: #000000;
 
           &:hover {
-            color: red;
-            border-bottom: 2px solid red;
+            color: #EC3025;
+            border-bottom: 2px solid #EC3025;
           }
         }
       }
     }
 
-    &--title3:hover {
-      border-bottom: 3px solid #EC3025;
-    }
-
-    &--box {
-      margin: 80px 0 99px 123px;
-      box-sizing: border-box;
-      width: 1220px;
-      height: 229px;
+    &--block1 {
+      margin-top: 80px;
+      padding: 50px 0;
       background: #F8F8F8;
       border: 2px solid #EC3025;
       border-radius: 125px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
 
-      &__number {
-        margin-left: 5rem;
+      h1 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 64px;
+        color: #EC3025;
+      }
 
-        h1 {
-          font-family: 'Muller', sans-serif;
-          font-style: normal;
-          font-weight: 500;
-          font-size: 64px;
-          line-height: 64px;
-          color: #EC3025;
-
-        }
-
-        p {
-
-          font-family: 'SF Pro Display', sans-serif;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 24px;
-          line-height: 29px;
-          color: #1B1B1B;
-
-        }
-
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #1B1B1B;
       }
     }
+  }
+}
+@media (max-width: 1024px) {
+  #us .us--block1 {
+    padding: 35px 0;
 
   }
 }
+@media (max-width: 876px) {
+  #us .us--block1 {
+    padding: 20px 0;
+  }
+  #us .us--block1 h1 {
+    font-size: 45px;
+    padding-left: 15%;
+  }
+  #us .us--block1 p {
+    font-size: 19px;
+  }
+}
+@media (max-width: 800px) {
+  #us .us--block1 h1 {
+    font-size: 38px;
+    padding-left: 20%;
+  }
+  #us .us--block1 {
+    padding: 10px 0;
+  }
+  #us .us--block1 p {
+    font-size: 17px;
+  }
+}
+@media (max-width: 415px) {
+  #us .us--block {
+    flex-direction: column;
+    margin-left: -85px;
+    margin-right: 25px;
+  }
+  #us .us--block__p p {
+    width: 260%;
+    font-size: 17px;
+  }
+  #us .us--block h1 {
+    margin-bottom: 20px;
+  }
+  #us .us--block1{
+    width: 311px;
+    height: 171px;
+    border-radius: 30px;
+    margin-left: -68px;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 412px){
+
+}
+@media (max-width: 391px) {
+
+}
+@media (max-width: 376px) {
+}
+@media (max-width: 320px) {
+  #us .us--block1 {
+    width: 225px;
+    height: 171px;
+  }
+  #us .us--block1 h1 {
+    font-size: 30px;
+    padding-left: 20%;
+  }
+
+}
+
+
+
+
+
+
+
 
 @media (max-width: 1140px) {
   #about {
