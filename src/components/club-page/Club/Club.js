@@ -16,7 +16,7 @@ const Club = () => {
                         </p>
                     </div>
                     <div className="club--talking">
-                        <div className="club--talkingmonths">
+                        <div className="club--talking__proj">
                             <h3>3</h3>
                             <span>Месяца</span>
                         </div>
