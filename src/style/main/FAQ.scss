@@ -1,73 +1,96 @@
+#accordion {
+  background: #F8F8F8;
+  padding: 100px 0;
 
-#faq{
-  background: rgb(227, 223, 216);
-  padding: 120px 0;
-  .faq{
+  .accordion {
     display: flex;
-    align-items: flex-start;
-    justify-content:space-around ;
-    h1{
-      font-family: 'Muller',sans-serif;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    h1 {
       font-style: normal;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 36px;
       line-height: 36px;
       display: flex;
       align-items: center;
-
-      /* красный */
-
       color: #EC3025;
     }
 
-    &--acor{
-
-      &__card{
-        margin: 10px 0;
-        display: flex;
-        align-items: flex-start;
-         justify-content: space-between;
-         flex-wrap: wrap;
-        width: 800px;
-        background: #FFFFFF;
-        border-radius: 30px;
-        height: 40px;
-        transition: 3s;
-        //    width: 732px;
-            overflow: hidden;
-          &:hover{
-            transform: scale(1.02);
-          }
-        &--acc{
-          &__rotate{
-            color: white;
-            transform: rotate(90deg);
-             transition: 1s;
-          }
-          h1{
-            padding: 10px 0;
-            margin-left: 2rem;
-            font-family: 'SF Pro Display',sans-serif;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 19px;
-            line-height: 130%;
-            color: #000000;
-            margin-bottom: 10px;
-
-          }
-          p{
-            margin-left: 2rem;
-            font-size: 17px;
-            color: black;
-          }
-        }
-      }
-
+    &--details {
+      width: 65%;
     }
-
   }
 }
 
+.card {
+  transition: 0.8s all;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px gray;
+  border-radius: 35px;
+  background: white;
+
+  &:hover{
+    position: relative;
+    margin: 15px;
+  }
+
+  &--collapse {
+    overflow: hidden;
+    transition: 1s all;
+    border-radius: 35px;
 
 
+    &__body {
+      background: white;
+      border-radius: 0 0 35px 35px;
+      padding: 35px;
+
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 140%;
+        color: rgba(27, 27, 27, 0.8);
+      }
+    }
+  }
+
+  &--header {
+    &__toggle {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      cursor: pointer;
+      background: #FFFFFF;
+      border-radius: 35px;
+      border: none;
+      transition: 0.5s all;
+      padding: 16px 35px;
+      margin-top: 15px;
+
+      &.active p {
+        transform: rotate(180deg);
+      }
+
+      p {
+        font-size: 25px;
+        transition: 0.5s all;
+      }
+
+      h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 130%;
+        color: #000000;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #accordion .accordion--details {
+    width: 100%;
+  }
+}

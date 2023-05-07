@@ -9,8 +9,6 @@ import Modal from "../../../modalPage/Modal";
 import modal from "../../../image/main/smiling-face 2.svg";
 
 
-
-
 const Courses = () => {
 
     const [submitted, setSubmitted] = useState(false)
@@ -30,7 +28,8 @@ const Courses = () => {
                 <section>
                     <div className="scroll text1" style={{background: "#EC3025"}}>
                         <div>
-                            курсы <span>курсы <span className="course--vector"></span> </span> курсы <span>курсы - </span> курсы{" "}
+                            курсы <span>курсы <span
+                            className="course--vector"></span> </span> курсы <span>курсы - </span> курсы{" "}
                             <span>курсы - </span> курсы <span>курсы - </span>
                             курсы <span>курсы - </span> курсы <span>курсы - </span> курсы{" "}
                             <span>курсы - </span> курсы <span>курсы - </span>
@@ -128,11 +127,12 @@ const Courses = () => {
                                 <button className="course--btn4">CSS</button>
                                 <button className="course--btn1">SASS</button>
                             </div>
-                            <div className="course--buttons2">
 
+                            <div className="course--buttons2">
                                 <button className="course--btn5">+Английский</button>
                                 <button className="course--btn5">3 месяцев</button>
                             </div>
+
                             <div className="course--but">
                                 <button className="course--btn">Подробнее</button>
                                 <button className="course--btn6" onClick={() => setStart(!start)}>Оставить заявку
@@ -142,8 +142,8 @@ const Courses = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
+
             <div className="container">
                 <div className="course2">
                     <div className="course2--box">
