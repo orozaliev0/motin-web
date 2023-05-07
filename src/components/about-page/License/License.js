@@ -23,7 +23,7 @@ const License = () => {
                         </div>
                         <div className="list--line"></div>
                     </div>
-                    <img src={img} className="list--img" alt=""/>
+                    <img src={img} className="list--img1" alt=""/>
                 </div>
             </div>
 

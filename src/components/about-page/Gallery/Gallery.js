@@ -7,12 +7,18 @@ import img4 from "../../../image/about-us/image 12.svg"
 import img5 from "../../../image/about-us/partne.svg"
 import img6 from "../../../image/about-us/Vector.svg"
 import img7 from "../../../image/about-us/partner-2svg.svg"
+import Slider from "react-slick";
 
 const Gallery = () => {
     const [block, setBlock] = useState(false)
-    const [active, setActive] = useState(1)
-    const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    console.log(active)
+
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 3
+    };
     return (
         <section id="call">
             <div className="container">
@@ -20,7 +26,7 @@ const Gallery = () => {
                     <div>
                         <h1 className="call--title">Галерея</h1>
                     </div>
-                    <div className="call--img">
+                    <div className="call--images1">
                         <img src={img1} alt=""/>
                         <img src={img2} className="call--img2" alt=""/>
                     </div>
@@ -35,14 +41,29 @@ const Gallery = () => {
                 </div>
 
                 {
-                    block ?<div className="call--images">
-                        <img src={img3} alt=""/>
-                        <img src={img4} alt=""/>
-                        <img src={img3} alt=""/>
-                        <img src={img4} alt=""/>
-                        <img src={img3} alt=""/>
-                        <img src={img4} alt=""/>
-                    </div>  : ''
+                    block ?
+                        <div className="call--slider"> <Slider {...settings}>
+                            <div>
+                                <img src={img3} alt=""/>
+                            </div>
+                            <div>
+                                <img src={img4} alt=""/>
+                            </div>
+                            <div>
+                                <img src={img3} alt=""/>
+                            </div>
+                            <div>
+                                <img src={img4} alt=""/>
+                            </div>
+                            <div>
+                                <img src={img3} alt=""/>
+                            </div>
+                            <div>
+                                <img src={img4} alt=""/>
+                            </div>
+
+                        </Slider></div>
+                        : ''
                 }
             </div>
             <div className="call--boxes">
