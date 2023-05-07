@@ -2,7 +2,7 @@
   padding: 50px 0;
   .found{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     &--title{
       font-family: 'Muller',sans-serif;
       font-style: normal;
@@ -20,10 +20,9 @@
       line-height: 140%;
       color: rgba(27, 27, 27, 0.8);
     }
-    &--block{
+    &--images{
       display: flex;
-      padding:0 10px;
-      margin-left: 10px;
+      grid-column-gap: 30px;
     }
     &--title2{
       font-family: 'SF Pro Display',sans-serif;
@@ -52,7 +51,6 @@
       color: #000000;
       padding-top: 10px;
       padding-bottom: 6px;
-      padding-left: 8rem;
     }
     &--desc3{
       font-family: 'SF Pro Display',sans-serif;
@@ -61,11 +59,60 @@
       font-size: 19px;
       line-height: 140%;
       color: rgba(27, 27, 27, 0.8);
-      padding-left: 8rem;
-    }
-    &--img{
-      padding-left: 8rem;
     }
   }
+}
+
+@media (max-width: 1200px) {
+  #found .found {
+    display: flex;
+    justify-content: space-between;
+    grid-column-gap: 22px;
+  }
+}
+@media (max-width: 1040px) {
+  #found .found--desc {
+    font-size: 22px;
+  }
+
+}
+@media (max-width: 992px) {
+  #found .found--desc {
+    font-size: 17px;
+  }
+}
+@media (max-width: 768px) {
+  #found .found {
+    display: flex;
+     justify-content: space-between;
+    grid-column-gap: 22px;
+  }
+  #found .found--title2 {
+    font-size: 19px;
+
+  }
+}
+@media (max-width: 576px) {
+  #found {
+    padding: 10px;
+  }
+  #found .found {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* grid-column-gap: 22px; */
+  }
+  #found .found--desc {
+    font-size: 21px;
+    padding-bottom: 25px;
+  }
+}
+@media (max-width: 400px) {
+
+}
+@media (max-width: 320px) {
+
+}
+@media (max-width: 400px) {
 
 }

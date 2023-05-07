@@ -5,8 +5,7 @@
 
   .application {
     display: flex;
-    align-items: start;
-    justify-content: space-between;
+
 
     &--inputs {
       input[type=number]::-webkit-inner-spin-button {
@@ -99,4 +98,12 @@
       }
     }
   }
+}
+
+
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 1040px) {
+
 }
