@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Frontend from "./Frontend";
-import FrontendHero from "./FrontendHero";
+import FrontendHero from "./frontendHero/FrontendHero";
 import Last from "../../components/main-page/Last/Last";
 import SingForm from "../../modalPage/SingForm";
 

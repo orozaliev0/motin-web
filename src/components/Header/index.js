@@ -1,60 +1,47 @@
 import React, {useState} from 'react';
-import logoHeader from '../../image/main/Vectorred.svg'
-import {GrLanguage} from "react-icons/gr"
+import Motion from '../../image/main/LogoMotion.png'
+import language from '../../image/main/Ellipse 274.png'
 import '../../style/main/Header.scss'
 import '../../style/main/media/MediaHeader.scss'
 import {NavLink} from "react-router-dom";
-import burgerImg from "./../../image/main/бургер.svg"
+import Courses from "../Header/Courses";
 import Menu from "./Menu/Menu";
-
 
 const Header = () => {
 
-    const [burger, setBurger] = useState(true)
-    const burgerF = () => {
-        setBurger(true)
-    }
-
+    const [courses, setCourses] = useState(false)
+    const items = [{value : 'О нас', href : '/aboutUs' },{value : 'Frontend', href : 'frontend' },{value : 'backend', href : 'backend' },{value : 'UxUi', href : 'UxUi' },{value : 'Club', href : 'club' },{value : 'Contact' , href: '' }]
+    const [active , setActive] = useState(false)
 
     return (
-        <section id="header">
+        <div id='header' onMouseLeave={() => setCourses(false)}>
             <div className="container">
                 <div className="header">
-
-                    <img src={logoHeader} alt=""/>
-
-                    <div className="header--pages">
-                        <NavLink to={`/`} onClick={() => window.scroll(0, 0)}>Главное</NavLink>
-                        <NavLink to={`/about_us`} onClick={() => window.scroll(0, 0)}>О нас</NavLink>
-                        <div className="courses">
-                            <NavLink to={`/`}>О курсах</NavLink>
-                            <div className="ul">
-                                <NavLink to={`/MainFr`} onClick={() => window.scroll(0, 0)}>Frontend</NavLink> <br/>
-                                <NavLink to={`/UxUi`} onClick={() => window.scroll(0, 0)}>UI/UX design</NavLink> <br/>
-                                <NavLink to={`/backend`} onClick={() => window.scroll(0, 0)}>Backend</NavLink>
-                            </div>
-                        </div>
-                        <NavLink to={`/it_club`} onClick={() => window.scroll(0, 0)}>Клуб</NavLink>
-                        <a href="#footer">Контакты</a>
+                    <NavLink to={'/'}>
+                        <img src={Motion} alt=""/>
+                    </NavLink>
+                    <div className="header__block">
+                        <NavLink to={'/'}>Главное</NavLink>
+                        <NavLink to={"/about_us"}>O нас</NavLink>
+                        <a onMouseOver={() => setCourses(true)}> {courses ? <Courses/> : ''}O курсах</a>
+                        <NavLink to={"/it_club"}>Клуб</NavLink>
+                        <NavLink onClick={() => window.scroll(0,7000)} to={""}>Контакты</NavLink>
                     </div>
-
-                    <div className="header--languages">
-                        <GrLanguage className="header--languages__icon"/>
-                        <a href="#">КР/</a>
-                        <a href="#">РУС/</a>
-                        <a href="#">ENG</a>
+                    <div className="header__language">
+                        <img src={language} alt=""/>
+                        <span>КР/РУС/ENG</span>
                     </div>
-
-                    <div className="header--menuBurger">
-                        <span><img onClick={() => setBurger(!burger)} src={burgerImg} alt=""/></span>
-                        <div className={burger ? "burger" : "burger active"} onClick={() => setBurger(true)}>
-                            <Menu burgerF={burgerF}/>
-                        </div>
-                    </div>
-
+                    {/*<nav className="burger_navbar">*/}
+                    {/*    <div*/}
+                    {/*        onClick={()=> setActive(!active)}*/}
+                    {/*        className="burger-btn">*/}
+                    {/*        <span/>*/}
+                    {/*    </div>*/}
+                    {/*</nav>*/}
                 </div>
             </div>
-        </section>
+            {/*<div className="menu--navbar"> <Menu items={items} active={active} setActive={setActive}/></div>*/}
+        </div>
     );
 };
 
