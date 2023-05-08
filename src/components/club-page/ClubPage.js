@@ -3,6 +3,7 @@ import Hero from "./Hero/Hero";
 import Club from "./Club/Club";
 import Project from "./Project/Project";
 import Last from "./Last/Last";
+import Receive from "./receive/Receive";
 
 const ClubPage = () => {
     return (
@@ -11,6 +12,7 @@ const ClubPage = () => {
             <Club/>
             <Project/>
             <Last/>
+            <Receive/>
         </div>
     );
 };
