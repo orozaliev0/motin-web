@@ -1,37 +1,36 @@
 import React from "react";
 import "../../../style/it-club/Club.scss";
+
 const Club = () => {
     return (
-        <div id="club">
+        <section id="clubUs">
             <div className="container">
-                <div className="club">
-                    <div className="club--it">
-                        <h4>Зачем вам <span>IT-КЛУБ?</span></h4>
-                        <p>
-                            Анализируя курсы в Бишкеке мы решили открыть клуб, который поможет
-                            студентам подготовиться к реальным проектам. Участники
-                            не заканчивая курс смогут понять как работать в команде, научатся
-                            презентовать свои работы и поймут какие проблемы бывают на стадии
-                            разработки
-                        </p>
+                <div className="clubUs">
+                    <div className="clubUs--block">
+                        <h1>Зачем вам <br/> IT-КЛУБ?</h1>
+                        <p>Анализируя курсы в Бишкеке мы решили открыть клуб, который поможет студентам
+                            подготовиться к реальным проектам. Участники не заканчивая курс смогут понять как
+                            работать в команде, научатся презентовать свои работы и поймут какие проблемы бывают на
+                            стадии разработки</p>
                     </div>
-                    <div className="club--talking">
-                        <div className="club--talking__proj">
-                            <h3>3</h3>
-                            <span>Месяца</span>
+
+                    <div className="clubUs--block1">
+                        <div>
+                            <h1>3</h1>
+                            <p>Месяца</p>
                         </div>
-                        <div className="club--talkingweek">
-                            <h3>Talking club</h3>
-                            <span>Каждую неделю</span>
+                        <div>
+                            <h1>Talking club</h1>
+                            <p>Каждую неделю</p>
                         </div>
-                        <div className="club--talking__proj">
-                            <h3>3</h3>
-                            <span>Проекта</span>
+                        <div>
+                            <h1>3</h1>
+                            <p>Проекта</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
