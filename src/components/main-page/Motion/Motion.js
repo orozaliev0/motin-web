@@ -52,7 +52,7 @@ const Choice = () => {
                                     Участники не заканчивая курс смогут понять как работать в команде, научатся
                                     презентовать свои работы и поймут какие проблемы бывают на стадии разработки
                                 </p>
-                                <NavLink to={`/club`} onClick={() => window.scroll(0, 0)}>Подробнее</NavLink>
+                                <NavLink to={`/it_club`} onClick={() => window.scroll(0, 0)}>Подробнее</NavLink>
                             </div>
                         </div>
                     </div>

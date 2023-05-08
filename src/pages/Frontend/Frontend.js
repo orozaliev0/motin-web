@@ -115,7 +115,6 @@ const Frontend = () => {
                                 <li>В Академии есть возможность практиковать внеклассное обучение в период с 09 до 22
                                     (OPEN SPACE).
                                 </li>
-
                             </div>
                             <div className="frontEnd--bottom">
                                 <div className="container">
