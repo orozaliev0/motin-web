@@ -34,15 +34,20 @@ const Gallery = () => {
                 <div className="call--box">
                     <img src={img3} alt=""/>
                     <img src={img4} className="call--img4" alt=""/>
+                    <div>
+                         <span className="call--desc" onClick={() => setBlock(!block)} style={{
+                             display: block ? "none" : '',
+                             borderBottom: '1px red',
+                         }}>Показать ещё</span>
+                    </div>
 
-                    <span className="call--desc" onClick={() => setBlock(!block)} style={{
-                        display: block ? "none" : ''
-                    }}>Показать ещё</span>
+
                 </div>
 
                 {
                     block ?
-                        <div className="call--slider"> <Slider {...settings}>
+                        <div className="call--slider">
+                            <Slider {...settings}>
                             <div>
                                 <img src={img3} alt=""/>
                             </div>
@@ -66,6 +71,8 @@ const Gallery = () => {
                         : ''
                 }
             </div>
+
+
             <div className="call--boxes">
                 <div>
                     <img src={img5} alt=""/>
