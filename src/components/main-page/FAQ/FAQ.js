@@ -1,15 +1,44 @@
-import React, {useState} from 'react';
-import '../../../style/main/FAQ.scss'
-import '../../../style/main/media/mediaFAQ.scss'
-import {MdArrowBackIos, MdArrowBackIosNew} from "react-icons/md";
+import React, {useState, useRef} from 'react';
+import "./../../../style/main/FAQ.scss"
+import {MdOutlineKeyboardArrowDown} from "react-icons/md"
 
-const FAQ = () => {
-    const [selected, setSelected] = useState(false)
-    const [selected2, setSelected2] = useState(false)
-    const [selected3, setSelected3] = useState(false)
-    const [selected4, setSelected4] = useState(false)
-    const [selected5, setSelected5] = useState(false)
-    const [selected6, setSelecte6] = useState(false)
+const faqs = [
+    {
+        id: 1,
+        header: "Нужны ли начальные знания для учёбы?",
+        text: `После начала обучения вы получите готовый карьерный трек на основе ваших способностей и интересов от нашего Центра развития карьеры. Вам помогут составить резюме, подготовить профили на сайтах по поиску вакансий, составят сопроводительное письмо и помогут собрать все проекты, которые вы создадите за время обучения в конкурентное портфолио.Специалисты Центра развития карьеры помогут преодолеть страх новичка при прохождении собеседований и подготовят презентацию ваших сильных сторон для общения с рекрутерами. Кроме того, студенты с хорошей успеваемостью будут получать офферы на стажировки и трудоустройство от наших партнёров из Европы и СНГ.`
+    },
+    {
+        id: 2,
+        header: "Как проходит консультация?",
+        text: `После начала обучения вы получите готовый карьерный трек на основе ваших способностей и интересов от нашего Центра развития карьеры. Вам помогут составить резюме, подготовить профили на сайтах по поиску вакансий, составят сопроводительное письмо и помогут собрать все проекты, которые вы создадите за время обучения в конкурентное портфолио.Специалисты Центра развития карьеры помогут преодолеть страх новичка при прохождении собеседований и подготовят презентацию ваших сильных сторон для общения с рекрутерами. Кроме того, студенты с хорошей успеваемостью будут получать офферы на стажировки и трудоустройство от наших партнёров из Европы и СНГ.`
+    },
+    {
+        id: 3,
+        header: "Какой график обучения? Получится ли совмещать его с работо?",
+        text: `После начала обучения вы получите готовый карьерный трек на основе ваших способностей и интересов от нашего Центра развития карьеры. Вам помогут составить резюме, подготовить профили на сайтах по поиску вакансий, составят сопроводительное письмо и помогут собрать все проекты, которые вы создадите за время обучения в конкурентное портфолио.Специалисты Центра развития карьеры помогут преодолеть страх новичка при прохождении собеседований и подготовят презентацию ваших сильных сторон для общения с рекрутерами. Кроме того, студенты с хорошей успеваемостью будут получать офферы на стажировки и трудоустройство от наших партнёров из Европы и СНГ.`
+    },
+    {
+        id: 4,
+        header: "Мне помогут трудоустроится?",
+        text: `После начала обучения вы получите готовый карьерный трек на основе ваших способностей и интересов от нашего Центра развития карьеры. Вам помогут составить резюме, подготовить профили на сайтах по поиску вакансий, составят сопроводительное письмо и помогут собрать все проекты, которые вы создадите за время обучения в конкурентное портфолио.Специалисты Центра развития карьеры помогут преодолеть страх новичка при прохождении собеседований и подготовят презентацию ваших сильных сторон для общения с рекрутерами. Кроме того, студенты с хорошей успеваемостью будут получать офферы на стажировки и трудоустройство от наших партнёров из Европы и СНГ.`
+    },
+    {
+        id: 5,
+        header: "Кто мне поможет, если возникнут вопросы?",
+        text: `После начала обучения вы получите готовый карьерный трек на основе ваших способностей и интересов от нашего Центра развития карьеры. Вам помогут составить резюме, подготовить профили на сайтах по поиску вакансий, составят сопроводительное письмо и помогут собрать все проекты, которые вы создадите за время обучения в конкурентное портфолио.Специалисты Центра развития карьеры помогут преодолеть страх новичка при прохождении собеседований и подготовят презентацию ваших сильных сторон для общения с рекрутерами. Кроме того, студенты с хорошей успеваемостью будут получать офферы на стажировки и трудоустройство от наших партнёров из Европы и СНГ.`
+    },
+    {
+        id: 6,
+        header: "Какая техника нужна для обучения?",
+        text: `После начала обучения вы получите готовый карьерный трек на основе ваших способностей и интересов от нашего Центра развития карьеры. Вам помогут составить резюме, подготовить профили на сайтах по поиску вакансий, составят сопроводительное письмо и помогут собрать все проекты, которые вы создадите за время обучения в конкурентное портфолио.Специалисты Центра развития карьеры помогут преодолеть страх новичка при прохождении собеседований и подготовят презентацию ваших сильных сторон для общения с рекрутерами. Кроме того, студенты с хорошей успеваемостью будут получать офферы на стажировки и трудоустройство от наших партнёров из Европы и СНГ.`
+    }
+]
+
+const AccordionItem = (props) => {
+    const contentEl = useRef();
+    const {handleToggle, active, faq} = props;
+    const {header, id, text} = faq;
 
     return (
         <div id="faq">
@@ -83,33 +112,60 @@ const FAQ = () => {
                         <MdArrowBackIos className="faq--acor__card--acc__rotate" style={{ transform: selected4 ? "rotate(270deg)" : "rotate(90deg)",
                             fontSize:"60px", marginRight:"20px", marginTop:"-10px", color:"wheat"}}/>
                     </div>
+        <div className="card">
+            <div className="card--header">
+                <div className={`card--header__toggle ${active === id ? 'active' : ''}`}
+                     onClick={() => handleToggle(id)}>
+                    <h3>{header}</h3>
+                    <p><MdOutlineKeyboardArrowDown/></p>
+                </div>
+            </div>
 
-                    <div onClick={() => {
-                        setSelected5(!selected5)
-                        setSelected2(false)
-                        setSelected3(false)
-                        setSelecte6(false)
 
-                        setSelected4(false)}} style={{height:selected5 ? "150px" : "",transition:"1s"}}  className="faq--acor__card">
-                        <div className="faq--acor__card--acc">
-                                 <h1>Кто мне поможет, если возникнут вопросы?</h1>
-                             <p>Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur at consequatur eum molestiae necessitatibus nulla officia reprehenderit, vero voluptatem. Animi hic libero omnis. Dolorum explicabo nesciunt quasi reiciendis rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, repellat? ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, suscipit.</p>
-                        </div>
-                    </div>
-                             <div  onClick={() => {
-                                 setSelecte6(!selected6)
-                                 setSelected2(false)
-                                 setSelected3(false)
-                                 setSelected(false)
-                                 setSelected4(false)}} style={{height:selected6 ? "150px" : "",transition:"1s"}}  className="faq--acor__card"><div className="faq--acor__card--acc"><h1>Какая техника нужна для обучения?</h1><p>Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur at consequatur eum molestiae necessitatibus nulla officia reprehenderit, vero voluptatem. Animi hic libero omnis.Dolorum explicabo nesciunt quasi reiciendis rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, repellat? ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, suscipit.</p></div><MdArrowBackIosNew className="faq--acor__card--acc__rotate" style={{ transform: selected6 ? "rotate(270deg)" : "rotate(90deg)", fontSize:"60px", marginRight:"20px", marginTop:"-10px", color:"wheat"}}/>
-                             </div>
-                         </div>
+            <div ref={contentEl} className={`card--collapse ${active === id ? 'show' : ''}`} style={
+                active === id
+                    ? {height: contentEl.current.scrollHeight}
+                    : {height: "0px"}
+            }>
 
+                <div className="card--collapse__body">
+                    <p>{text}</p>
                 </div>
             </div>
         </div>
+    )
+}
 
+const Accordion = () => {
+
+    const [active, setActive] = useState(null);
+
+    const handleToggle = (index) => {
+        if (active === index) {
+            setActive(null);
+        } else {
+            setActive(index);
+        }
+    }
+
+    return (
+        <section id="accordion">
+            <div className="container">
+                <div className="accordion">
+                    <h1>Частые вопросы</h1>
+                    <div className="accordion--details">
+                        {faqs.map((faq, index) => {
+                            return (
+                                <AccordionItem key={index} active={active} handleToggle={handleToggle}
+                                               faq={faq}/>
+                            )
+                        })
+                        }
+                    </div>
+                </div>
+            </div>
+        </section>
     );
 };
 
-export default FAQ;
+export default Accordion

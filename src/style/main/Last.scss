@@ -7,6 +7,7 @@
     display: flex;
     align-items: start;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     &--inputs {
       input[type=number]::-webkit-inner-spin-button {
@@ -96,7 +97,26 @@
         font-size: 18px;
         line-height: 130%;
         color: rgba(255, 255, 255, 0.8);
+        padding-bottom: 30px;
       }
     }
   }
 }
+
+
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 1040px) {
+
+}
+@media (max-width: 992px) {
+  #application .application--inputs input {
+    padding: 15px 100% 15px 15px;
+  }
+  #application .application--inputs button {
+    padding: 10px 0;
+    width: 100%;
+  }
+}
+

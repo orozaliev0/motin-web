@@ -14,20 +14,21 @@ const Founders = () => {
                             основана в апреле 2021 года <br/>
                             по инициативе Курманбека <br/> Жоошбаева и Аскерова Канатбека</p>
                     </div>
-                    
-                    <div className="found--block">
+
+                    <div className="found--images">
                         <div>
-                            <img src={imgFound1} alt=""/>
+                            <img src={imgFound1} className="found--img1" alt=""/>
                             <h3 className="found--title2">Курманбек Жоошбаев</h3>
                             <p className="found--desc2">Основатель</p>
                         </div>
                         <div>
-                            <img src={imgFound2} className="found--img" alt=""/>
-                            <h3 className="found--title3">Канатбек Аскеров</h3>
-                            <p className="found--desc3">Сооснователь</p>
+                            <img src={imgFound2} className="found--img2" alt=""/>
+                            <h3 className="found--title2">Канатбек Аскеров</h3>
+                            <p className="found--desc2">Сооснователь</p>
                         </div>
                     </div>
-                   
+
+
                 </div>
             </div>
 
