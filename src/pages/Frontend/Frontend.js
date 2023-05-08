@@ -95,6 +95,18 @@ const Frontend = () => {
                         <button>Офлайн</button>
                         <button>Онлайн</button>
                     </div>
+                    <div className="frontEnd--ofline">
+                        <div style={{
+                            display: choose ? "block" : "none",
+                            transition: choose ? "3s" : "0", backdropFilter: 'blur(10px)'
+                        }} onClick={() => SetChoose(!choose)} className='frontEnd--ofline__first'>
+                            <div className="frontEnd--ofline__first--three">
+                                <h1>Офлайн</h1>
+                                <li>В одной группе обучается всего 10-12-14 студентов стандартной формы.</li>
+                                <li>Занятия будут проходить на кыргызском языке.</li>
+                                <li>В Академии есть возможность практиковать внеклассное обучение в период с 09 до 22
+                                    (OPEN SPACE).
+                                </li>
 
                 </div>
                 <div className="frontEnd--bottom">

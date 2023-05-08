@@ -55,6 +55,17 @@ const Motion = () => {
                                     </p>
                                 </div>
                             </div>
+                        </div>
+                        <div className="choice--card__details">
+                            <img src={smile3} alt=""/>
+                            <div className="choice--card__details--text">
+                                <h3>IT club</h3>
+                                <p>IT-Клуб это мост между курсом и реальной работой. Анализируя курсы в Бишкеке мы
+                                    решили открыть клуб, который поможет студентам подготовиться к реальным проектам.
+                                    Участники не заканчивая курс смогут понять как работать в команде, научатся
+                                    презентовать свои работы и поймут какие проблемы бывают на стадии разработки
+                                </p>
+                                <NavLink to={`/it_club`} onClick={() => window.scroll(0, 0)}>Подробнее</NavLink>
                             <div className="motion--study__block--rocket">
                                 <img src={Rocket} alt="" />
                                 <div>
