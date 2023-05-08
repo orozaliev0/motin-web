@@ -760,43 +760,85 @@
 
   #bg{
     background: #f6f6f6 ;
+    padding: 100px 0;
+     .accordion{
+       &--type{
+         margin: 15px 0;
+         &__folower{
+            transition: 1s;
+           width: 1276px;
+           height: 620px;
+           background: #FFFFFF;
+           overflow: hidden;
+           border-radius: 25px;
+           &--folower2{
+             position: relative;
+             &__folower3{
+               position: absolute;
+               top: 16px;
+               left: 6px;
+               width: 98%;
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+             &--icon{
+               font-size: 30px;
+               //transform: rotate(1deg);
+                transition: 1s;
+             }
+              &--folower4{
+                 display: flex;
+                  align-items: center;
+
+                h1{
+                  padding: 10px 0;
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 24px;
+                  line-height: 22px;
+                  /* identical to box height, or 92% */
+
+                  display: flex;
+                  align-items: center;
+                  text-align: center;
+
+                  color: #000000;
+                }
+
+              }
+            }
+          }
+            &--this{
+              padding: 33px 0;
+              display: flex;
+              align-items: center;
+              justify-content: space-around;
+              &__those{
+            p{
+              width: 592px;
+              font-family: 'SF Pro Display',sans-serif;
+              font-weight: 400;
+              font-size: 19px;
+              line-height: 130%;
+              color: rgba(27, 27, 27, 0.8);
+            }
+                &__that{
+                  li{
+                    font-family: 'SF Pro Display',sans-serif;
+                    font-weight: 400;
+                    font-size: 19px;
+                    line-height: 170%;
+                    color: #1B1B1B;
+
+
+                  }
+                }
+              }
+            }
+         }
+       }
+     }
     .accordionFront{
-      padding: 50px 0 50px 0;
-      .accord{
-        display: flex;
-        width: 1379px;
-        height: 75px;
-        background: white;
-        border-radius: 25px;
-        margin: 10px 0 0 0;
-        &--block{
-          h1{
-            position: relative;
-            top: 50px ;
-            left: -12px;
-            width: 592px;
-            color: rgba(27, 27, 27, 0.8)
-          }
-          li{
-            top: 70px;
-            left: 0;
-            position: relative;
-            list-style: disc;
-          }
-        }
-        &--leftBlock {
-          display: flex;
-          align-items: center;
-          img {
-            margin: 0 14px 0 24px;
-          }
-        }
-        &--rightBlock{
-          margin: 26px 0 0 68.5rem;
-          color: black;
-          font-size: 27px;
-        }
-      }
     }
 
   }

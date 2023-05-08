@@ -17,19 +17,34 @@ const FAQ = () => {
                 <div className="faq">
                     <h1>Отзывы студентов</h1>
                          <div className="faq--acor">
-                              <div  onClick={() => {
+
+
+                             <div  onClick={() => {
                         setSelected(!selected)
                         setSelecte6(false)
                         setSelected2(false)
                         setSelected3(false)
-                        setSelected4(false)}} style={{height:selected ? "150px" : "",transition:"1s"}}  className="faq--acor__card">
+                        setSelected4(false)}} style={{height:selected ? "202px" : "",transition:"1s"}}  className="faq--acor__card">
                         <div className="faq--acor__card--acc">
-                                 <h1>Нужны ли начальные знания для учёбы?</h1>
-                             <p>Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur at consequatur eum molestiae necessitatibus nulla officia reprehenderit, vero voluptatem. Animi hic libero omnis. Dolorum explicabo nesciunt quasi reiciendis rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, repellat? ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, suscipit.</p>
+                                    <div>
+                                        <h1>Нужны ли начальные знания для учёбы?</h1>
+                                        <p>Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Accusantium aspernatur at consequatur
+                                            eum molestiae necessitatibus nulla officia
+                                            reprehenderit, vero voluptatem. Animi hic libero omnis.
+                                            Dolorum explicabo nesciunt quasi reiciendis rerum.
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                                            elit. Dolores, repellat? ipsum dolor sit amet,
+                                            consectetur adipisicing elit. Doloremque, suscipit.</p>
+
+                                    </div>
+
+
                         </div>
-                        <MdArrowBackIosNew className="faq--acor__card--acc__rotate" style={{ color:"black", transform: selected ? "rotate(270deg)" : "rotate(90deg)",
-                            fontSize:"60px", marginRight:"20px", marginTop:"-10px", }}/>
-                    </div>
+                                 <MdArrowBackIosNew className="faq--acor__card--acc__rotate" style={{ color:"black", transform: selected ? "rotate(270deg)" : "rotate(90deg)", fontSize:"20px", marginRight:"20px", marginTop:"-10px", }}/>
+
+
+                             </div>
                     <div  onClick={() => {
                         setSelected2(!selected2)
                         setSelecte6(false)

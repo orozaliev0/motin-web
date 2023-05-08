@@ -31,19 +31,25 @@
         width: 800px;
         background: #FFFFFF;
         border-radius: 30px;
-        height: 40px;
+        height: 42px;
         transition: 3s;
         //    width: 732px;
             overflow: hidden;
           &:hover{
             transform: scale(1.02);
           }
+
         &--acc{
+           display: flex;
+           align-items: flex-start;
+          justify-content: space-around;
           &__rotate{
-            color: white;
+            font-size: 30px;
+            color: #0b170a;
             transform: rotate(90deg);
-             transition: 1s;
+            transition: 1s;
           }
+
           h1{
             padding: 10px 0;
             margin-left: 2rem;
